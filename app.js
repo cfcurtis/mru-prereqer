@@ -409,7 +409,9 @@ function updateSummary(course) {
   selectedCourse.textContent = `${course.display_code} — ${course.title}`;
   courseNotes.textContent = course.source_prerequisite_text ?? "";
   courseNotes.hidden = !course.source_prerequisite_text;
-  catalogLink.href = catalogSearchUrl(course);
+  catalogLink.href = course.catalog_url.includes("/preview_course.php?")
+    ? course.catalog_url
+    : catalogSearchUrl(course);
   catalogLink.hidden = false;
 }
 
