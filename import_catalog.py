@@ -271,7 +271,7 @@ def main() -> int:
     parser.add_argument("--output-dir", default="data", help="Output directory.")
     parser.add_argument(
         "--html-dir",
-        default="var/catalog-html",
+        default="catalog-html",
         help="Directory containing downloaded DEPT.html or CATALOG_ID-DEPT.html files.",
     )
     return run_import(parser.parse_args())
