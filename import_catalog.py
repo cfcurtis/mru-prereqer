@@ -71,7 +71,10 @@ def normalize_code(value: str) -> tuple[str, str] | None:
     match = COURSE_CODE_RE.search(value)
     if not match:
         return None
-    return format_course_code(*match.groups())
+    subject, number = match.groups()
+    if number.startswith("0"):
+        return None
+    return format_course_code(subject, number)
 
 
 def build_catalog_url(department: str, catalog_id: str) -> str:
@@ -110,6 +113,8 @@ def course_references(text: str) -> list[dict[str, str]]:
     references: list[dict[str, str]] = []
     seen: set[str] = set()
     for subject, number in COURSE_CODE_RE.findall(text):
+        if number.startswith("0"):
+            continue
         normalized, display = format_course_code(subject, number)
         if normalized in seen:
             continue
@@ -140,6 +145,8 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     for part in and_parts:
         references = course_references(part)
         if not references:
+            if COURSE_CODE_RE.search(part):
+                continue
             if notes:
                 return [], "not_applicable", [], notes
             return [], "review_required", ["Prerequisite text contains no recognizable course code."], notes

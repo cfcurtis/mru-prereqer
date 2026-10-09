@@ -14,6 +14,7 @@ class CourseCodeTests(unittest.TestCase):
     def test_normalizes_spaced_and_compact_codes(self):
         self.assertEqual(normalize_code("comp2511"), ("COMP2511", "COMP 2511"))
         self.assertEqual(normalize_code("MATH 1200"), ("MATH1200", "MATH 1200"))
+        self.assertIsNone(normalize_code("MATH 0130"))
 
 
 class PrerequisiteParserTests(unittest.TestCase):
@@ -60,6 +61,24 @@ class PrerequisiteParserTests(unittest.TestCase):
         self.assertEqual(issues, [])
         self.assertEqual(groups[0]["operator"], "all_of")
         self.assertEqual(len(notes), 1)
+
+    def test_ignores_zero_prefixed_course_segments(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "COOP 0001 and DATA 3463"
+        )
+
+        self.assertEqual(status, "parsed")
+        self.assertEqual(issues, [])
+        self.assertEqual(notes, [])
+        self.assertEqual(
+            groups,
+            [
+                {
+                    "operator": "all_of",
+                    "courses": [{"normalized_code": "DATA3463", "display_code": "DATA 3463"}],
+                },
+            ],
+        )
 
     def test_parses_required_and_optional_courses_before_grade_note(self):
         groups, status, issues, notes = parse_prerequisites(
