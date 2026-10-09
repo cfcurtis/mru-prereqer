@@ -237,13 +237,14 @@ button:hover {
 
 .link {
   fill: none;
-  stroke: #92a59d;
-  stroke-width: 1.5;
+  stroke: #5c967e;
+  stroke-width: 2;
 }
 
 .link.optional {
   stroke: var(--gold);
   stroke-dasharray: 5 4;
+  opacity: 0.58;
 }
 
 .node {
@@ -251,7 +252,7 @@ button:hover {
 }
 
 .node rect {
-  fill: var(--panel);
+  fill: var(--mint);
   stroke: var(--green);
   stroke-width: 1.5;
 }
@@ -261,9 +262,18 @@ button:hover {
   stroke: var(--gold);
 }
 
+.node.optional {
+  opacity: 0.62;
+}
+
+.node.optional:hover,
+.node.optional:focus {
+  opacity: 1;
+}
+
 .choice-groups rect {
   fill: var(--gold-light);
-  fill-opacity: 0.72;
+  fill-opacity: 0.45;
   stroke: #e7c388;
   stroke-width: 1;
 }
@@ -283,6 +293,7 @@ button:hover {
 
 .choice-groups text {
   fill: #80500f;
+  fill-opacity: 0.68;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
