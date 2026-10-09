@@ -13,7 +13,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Iterable
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
@@ -137,7 +137,11 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
         references = course_references(part)
         if not references:
             return [], "review_required", ["Prerequisite text contains no recognizable course code."], notes
-        operator = "one_of" if re.search(r"\s+(?:or|/)\s+", part, re.I) else "all_of"
+        operator = (
+            "one_of"
+            if re.search(r"\b(?:or|one\s+of)\b|/", part, re.I)
+            else "all_of"
+        )
         groups.append({"operator": operator, "courses": references})
 
     unparsed_words = COURSE_CODE_RE.sub("", course_parts)
@@ -167,6 +171,8 @@ def extract_courses(html: str, department: str, source_url: str) -> tuple[list[C
         normalized_code, display_code = code
         title = re.sub(rf"^{re.escape(display_code)}\s*", "", heading_text, flags=re.I)
         block = heading.find_parent(class_=re.compile("courseblock", re.I)) or heading.parent
+        link = heading.find("a", href=True)
+        catalog_url = urljoin(source_url, link["href"]) if link else source_url
         requirement_text = None
         for node in block.select("p, div, li") if block else []:
             requirement_text = text_after_label(node)
@@ -177,7 +183,7 @@ def extract_courses(html: str, department: str, source_url: str) -> tuple[list[C
             normalized_code=normalized_code,
             display_code=display_code,
             title=title.strip(" -:"),
-            catalog_url=source_url,
+            catalog_url=catalog_url,
             catalog_status="returned_by_catalog",
             source_prerequisite_text=requirement_text,
             prerequisite_groups=groups,
