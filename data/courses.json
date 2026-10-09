@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T18:33:50.783838+00:00",
+    "generated_at": "2026-10-09T18:38:35.231367+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -1387,17 +1387,7 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "COMP 4403.",
-      "prerequisite_groups": [
-        {
-          "operator": "all_of",
-          "courses": [
-            {
-              "normalized_code": "COMP4403",
-              "display_code": "COMP 4403"
-            }
-          ]
-        }
-      ],
+      "prerequisite_groups": [],
       "parse_status": "parsed",
       "issues": [],
       "non_course_requirements": []
@@ -1409,17 +1399,7 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "COMP 4421.",
-      "prerequisite_groups": [
-        {
-          "operator": "all_of",
-          "courses": [
-            {
-              "normalized_code": "COMP4421",
-              "display_code": "COMP 4421"
-            }
-          ]
-        }
-      ],
+      "prerequisite_groups": [],
       "parse_status": "parsed",
       "issues": [],
       "non_course_requirements": []
@@ -1900,21 +1880,7 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "A grade of 60% or higher in Mathematics 30-1 or in MATH 0130 , or a grade of C- or higher in any of MATH 1283 or MATH 1285 or equivalent.",
-      "prerequisite_groups": [
-        {
-          "operator": "one_of",
-          "courses": [
-            {
-              "normalized_code": "MATH1283",
-              "display_code": "MATH 1283"
-            },
-            {
-              "normalized_code": "MATH1285",
-              "display_code": "MATH 1285"
-            }
-          ]
-        }
-      ],
+      "prerequisite_groups": [],
       "parse_status": "review_required",
       "issues": [
         "Prerequisite includes unmodeled conditions."
@@ -2511,10 +2477,6 @@
         {
           "operator": "one_of",
           "courses": [
-            {
-              "normalized_code": "MATH1202",
-              "display_code": "MATH 1202"
-            },
             {
               "normalized_code": "MATH2200",
               "display_code": "MATH 2200"
