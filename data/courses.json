@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T18:28:40.404883+00:00",
+    "generated_at": "2026-10-09T18:33:50.783838+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -1074,10 +1074,6 @@
           "operator": "all_of",
           "courses": [
             {
-              "normalized_code": "COOP0001",
-              "display_code": "COOP 0001"
-            },
-            {
               "normalized_code": "COMP2511",
               "display_code": "COMP 2511"
             },
@@ -1847,66 +1843,6 @@
         "Permission of the Department Chair"
       ]
     },
-    "MATH0110": {
-      "normalized_code": "MATH0110",
-      "display_code": "MATH 0110",
-      "title": "Introduction to Mathematics",
-      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
-      "catalog_status": "returned_by_catalog",
-      "source_prerequisite_text": null,
-      "prerequisite_groups": [],
-      "parse_status": "not_applicable",
-      "issues": [],
-      "non_course_requirements": []
-    },
-    "MATH0115": {
-      "normalized_code": "MATH0115",
-      "display_code": "MATH 0115",
-      "title": "Foundations of Mathematics I",
-      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
-      "catalog_status": "returned_by_catalog",
-      "source_prerequisite_text": null,
-      "prerequisite_groups": [],
-      "parse_status": "not_applicable",
-      "issues": [],
-      "non_course_requirements": []
-    },
-    "MATH0130": {
-      "normalized_code": "MATH0130",
-      "display_code": "MATH 0130",
-      "title": "Pre-Calculus",
-      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
-      "catalog_status": "returned_by_catalog",
-      "source_prerequisite_text": null,
-      "prerequisite_groups": [],
-      "parse_status": "not_applicable",
-      "issues": [],
-      "non_course_requirements": []
-    },
-    "MATH0131": {
-      "normalized_code": "MATH0131",
-      "display_code": "MATH 0131",
-      "title": "Introduction to Calculus",
-      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
-      "catalog_status": "returned_by_catalog",
-      "source_prerequisite_text": null,
-      "prerequisite_groups": [],
-      "parse_status": "not_applicable",
-      "issues": [],
-      "non_course_requirements": []
-    },
-    "MATH0132": {
-      "normalized_code": "MATH0132",
-      "display_code": "MATH 0132",
-      "title": "Foundations of Mathematics II",
-      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
-      "catalog_status": "returned_by_catalog",
-      "source_prerequisite_text": null,
-      "prerequisite_groups": [],
-      "parse_status": "not_applicable",
-      "issues": [],
-      "non_course_requirements": []
-    },
     "MATH1102": {
       "normalized_code": "MATH1102",
       "display_code": "MATH 1102",
@@ -1968,10 +1904,6 @@
         {
           "operator": "one_of",
           "courses": [
-            {
-              "normalized_code": "MATH0130",
-              "display_code": "MATH 0130"
-            },
             {
               "normalized_code": "MATH1283",
               "display_code": "MATH 1283"
@@ -2045,19 +1977,6 @@
             {
               "normalized_code": "MATH1200",
               "display_code": "MATH 1200"
-            },
-            {
-              "normalized_code": "MATH0130",
-              "display_code": "MATH 0130"
-            }
-          ]
-        },
-        {
-          "operator": "all_of",
-          "courses": [
-            {
-              "normalized_code": "MATH0131",
-              "display_code": "MATH 0131"
             }
           ]
         }
@@ -3081,15 +3000,6 @@
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Completion of COOP 0001 and DATA 3463 with a minimum grade of C-.",
       "prerequisite_groups": [
-        {
-          "operator": "all_of",
-          "courses": [
-            {
-              "normalized_code": "COOP0001",
-              "display_code": "COOP 0001"
-            }
-          ]
-        },
         {
           "operator": "all_of",
           "courses": [
