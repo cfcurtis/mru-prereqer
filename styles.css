@@ -199,6 +199,7 @@ button:hover {
   fill: none;
   stroke: #5c967e;
   stroke-width: 2;
+  stroke-linecap: round;
 }
 
 .link.optional {

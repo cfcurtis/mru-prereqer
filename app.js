@@ -121,7 +121,7 @@ function dependentTree(code, path = new Set(), optional = false) {
 
 function layoutTree(tree, direction) {
   const root = d3.hierarchy(tree);
-  d3.tree().nodeSize([58, 190])(root);
+  d3.tree().nodeSize([58, 260])(root);
   const rootX = root.x;
   root.descendants().forEach((node) => {
     node.diagramX = node.y * direction;
@@ -130,13 +130,108 @@ function layoutTree(tree, direction) {
   return root;
 }
 
-function drawTree(layer, root) {
+function deduplicateTree(root) {
+  const occurrences = root.descendants();
+  const canonicalById = new Map();
+
+  for (const occurrence of occurrences) {
+    const current = canonicalById.get(occurrence.data.id);
+    if (
+      !current ||
+      occurrence.depth < current.depth ||
+      (occurrence.depth === current.depth &&
+        current.data.optional &&
+        !occurrence.data.optional)
+    ) {
+      canonicalById.set(occurrence.data.id, occurrence);
+    }
+  }
+
+  const nodes = [...canonicalById.values()].map((occurrence) => ({
+    id: occurrence.data.id,
+    label: occurrence.data.label,
+    kind: occurrence.data.kind,
+    optional: occurrences
+      .filter((item) => item.data.id === occurrence.data.id)
+      .every((item) => item.data.optional),
+    depth: occurrence.depth,
+    diagramX: occurrence.diagramX,
+    diagramY: occurrence.diagramY,
+  }));
+  const byId = new Map(nodes.map((node) => [node.id, node]));
+  const linksByKey = new Map();
+
+  for (const link of root.links()) {
+    const source = byId.get(link.source.data.id);
+    const target = byId.get(link.target.data.id);
+    if (source === target) {
+      continue;
+    }
+    const key = `${source.id}-${target.id}`;
+    const existing = linksByKey.get(key);
+    if (existing) {
+      existing.optional &&= link.target.data.optional;
+    } else {
+      linksByKey.set(key, {
+        source,
+        target,
+        optional: link.target.data.optional,
+        choiceGroup: link.target.data.choiceGroup,
+      });
+    }
+  }
+
+  for (const column of d3.groups(
+    nodes.filter((node) => node.depth > 0),
+    (node) => node.depth,
+  ).values()) {
+    column.sort((left, right) => left.diagramY - right.diagramY);
+    const center = d3.mean(column, (node) => node.diagramY);
+    column.forEach((node, index) => {
+      node.diagramY = center + (index - (column.length - 1) / 2) * 62;
+    });
+  }
+
+  return { nodes, links: [...linksByKey.values()] };
+}
+
+function relationshipPath(link) {
+  const { source, target } = link;
+  const sourceOffset = source.id === state.selectedCode ? 84 : 76;
+  const targetOffset = target.id === state.selectedCode ? 84 : 76;
+  if (source.diagramX !== target.diagramX) {
+    const direction = Math.sign(target.diagramX - source.diagramX);
+    return d3
+      .linkHorizontal()
+      .x((node) =>
+        node === source
+          ? node.diagramX + direction * sourceOffset
+          : node.diagramX - direction * targetOffset,
+      )
+      .y((node) => node.diagramY)(link);
+  }
+
+  const side = source.diagramX < 0 ? -1 : 1;
+  const laneX = source.diagramX + side * 112;
+  return [
+    `M${source.diagramX + side * sourceOffset},${source.diagramY}`,
+    `C${laneX},${source.diagramY}`,
+    `${laneX},${target.diagramY}`,
+    `${target.diagramX + side * targetOffset},${target.diagramY}`,
+  ].join(" ");
+}
+
+function drawTree(layer, graph, direction) {
   const choiceGroups = d3.groups(
-    root.descendants().filter((node) => node.data.choiceGroup),
-    (node) => node.data.choiceGroup,
+    graph.links.filter((link) => link.choiceGroup),
+    (link) => link.choiceGroup,
   );
   const choiceLayer = layer.append("g").attr("class", "choice-groups");
-  for (const [, nodes] of choiceGroups) {
+  for (const [, links] of choiceGroups) {
+    const nodes = [...new Set(links.map((link) => link.target))];
+    if (nodes.length < 2 || new Set(nodes.map((node) => node.depth)).size > 1) {
+      continue;
+    }
     const minX = d3.min(nodes, (node) => node.diagramX) - 90;
     const maxX = d3.max(nodes, (node) => node.diagramX) + 90;
     const minY = d3.min(nodes, (node) => node.diagramY) - 38;
@@ -155,61 +250,58 @@ function drawTree(layer, root) {
       .text("CHOOSE ONE");
   }
 
-  const links = root.links();
   layer
     .selectAll("path")
-    .data(links)
+    .data(graph.links)
     .join("path")
-    .attr("class", (link) => `link${link.target.data.optional ? " optional" : ""}`)
-    .attr(
-      "d",
-      d3
-        .linkHorizontal()
-        .x((node) => node.diagramX)
-        .y((node) => node.diagramY),
+    .attr("class", (link) => `link${link.optional ? " optional" : ""}`)
+    .attr("d", (link) =>
+      relationshipPath(direction < 0 ? { ...link, source: link.target, target: link.source } : link),
+    )
+    .attr("marker-end", (link) =>
+      `url(#arrow-${link.optional ? "optional" : "required"})`,
     );
 
-  const nodes = root.descendants().filter((node) => node.depth > 0);
+  const nodes = graph.nodes.filter((node) => node.depth > 0);
   const node = layer
     .selectAll("g.node")
-    .data(nodes, (item) => `${item.data.id}-${item.depth}-${item.diagramY}`)
+    .data(nodes, (item) => item.id)
     .join("g")
     .attr(
       "class",
-      (item) =>
-        `node ${item.data.kind}${item.data.optional ? " optional" : ""}`,
+      (item) => `node ${item.kind}${item.optional ? " optional" : ""}`,
     )
     .attr("transform", (item) => `translate(${item.diagramX},${item.diagramY})`)
-    .attr("tabindex", (item) => (item.data.kind === "course" ? 0 : null))
-    .attr("role", (item) => (item.data.kind === "course" ? "button" : null))
+    .attr("tabindex", (item) => (item.kind === "course" ? 0 : null))
+    .attr("role", (item) => (item.kind === "course" ? "button" : null))
     .attr("aria-label", (item) =>
-      item.data.kind === "course" ? `Show ${item.data.label}` : item.data.label,
+      item.kind === "course" ? `Show ${item.label}` : item.label,
     )
     .on("click", (_, item) => {
-      if (item.data.kind === "course" && state.courses[item.data.id]) {
-        selectCourse(item.data.id);
+      if (item.kind === "course" && state.courses[item.id]) {
+        selectCourse(item.id);
       }
     })
     .on("keydown", (event, item) => {
       if (
-        item.data.kind === "course" &&
-        state.courses[item.data.id] &&
+        item.kind === "course" &&
+        state.courses[item.id] &&
         (event.key === "Enter" || event.key === " ")
       ) {
         event.preventDefault();
-        selectCourse(item.data.id);
+        selectCourse(item.id);
       }
     });
 
   node.append("rect").attr("x", -76).attr("y", -18).attr("width", 152).attr("height", 36).attr("rx", 7);
-  node.append("text").attr("dy", 4).text((item) => item.data.kind === "choice" ? item.data.label : item.data.id);
+  node.append("text").attr("dy", 4).text((item) => item.kind === "choice" ? item.label : item.id);
 }
 
 function renderDiagram() {
   diagram.replaceChildren();
-  const left = layoutTree(prerequisiteTree(state.selectedCode), -1);
-  const right = layoutTree(dependentTree(state.selectedCode), 1);
-  const nodes = [...left.descendants(), ...right.descendants()];
+  const left = deduplicateTree(layoutTree(prerequisiteTree(state.selectedCode), -1));
+  const right = deduplicateTree(layoutTree(dependentTree(state.selectedCode), 1));
+  const nodes = [...left.nodes, ...right.nodes];
   const xValues = nodes.map((node) => node.diagramX);
   const yValues = nodes.map((node) => node.diagramY);
   const padding = 160;
@@ -228,11 +320,29 @@ function renderDiagram() {
     .attr("viewBox", viewBox.join(" "))
     .attr("role", "img")
     .attr("aria-label", `Prerequisite pathway for ${courseLabel(state.selectedCode)}`);
+  const defs = svg.append("defs");
+  [
+    ["required", "#5c967e"],
+    ["optional", "#b26d12"],
+  ].forEach(([name, color]) => {
+    defs
+      .append("marker")
+      .attr("id", `arrow-${name}`)
+      .attr("viewBox", "0 -4 8 8")
+      .attr("refX", 8)
+      .attr("refY", 0)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-4L8,0L0,4Z")
+      .attr("fill", color);
+  });
   const canvas = svg.append("g");
   svg.call(d3.zoom().scaleExtent([0.35, 8]).on("zoom", (event) => canvas.attr("transform", event.transform)));
 
-  drawTree(canvas.append("g"), left);
-  drawTree(canvas.append("g"), right);
+  drawTree(canvas.append("g"), left, -1);
+  drawTree(canvas.append("g"), right, 1);
 
   const center = canvas.append("g").attr("class", "node selected").attr("transform", "translate(0,0)");
   center.append("rect").attr("x", -84).attr("y", -22).attr("width", 168).attr("height", 44).attr("rx", 8);
