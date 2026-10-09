@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T17:39:40.843036+00:00",
+    "generated_at": "2026-10-09T17:42:01.117699+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -1720,11 +1720,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "Both COMP 2631 and MATH 2234 , and either DATA 2721 or COMP 2521 , all with a grade of C- or higher."
+      ]
     },
     "COMP4630": {
       "normalized_code": "COMP4630",
@@ -1951,11 +1951,11 @@
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Mathematics 30-1 with a grade of 60% or higher or equivalent.",
       "prerequisite_groups": [],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite text contains no recognizable course code."
-      ],
-      "non_course_requirements": []
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Mathematics 30-1 with a grade of 60% or higher or equivalent."
+      ]
     },
     "MATH1200": {
       "normalized_code": "MATH1200",
@@ -2022,22 +2022,14 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
-      "prerequisite_groups": [
-        {
-          "operator": "one_of",
-          "courses": [
-            {
-              "normalized_code": "MATH0130",
-              "display_code": "MATH 0130"
-            }
-          ]
-        }
-      ],
+      "prerequisite_groups": [],
       "parse_status": "review_required",
       "issues": [
-        "Prerequisite includes unmodeled conditions."
+        "Unsupported semicolon-separated prerequisite expression."
       ],
-      "non_course_requirements": []
+      "non_course_requirements": [
+        "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher."
+      ]
     },
     "MATH1224": {
       "normalized_code": "MATH1224",
@@ -2070,11 +2062,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1200 with a grade of C- or higher or Mathematics 30-1/ MATH 0130 with a grade of 65% or higher and Mathematics 31/ MATH 0131 with a grade of 50% or higher."
+      ]
     },
     "MATH1271": {
       "normalized_code": "MATH1271",
@@ -2094,11 +2086,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 with a grade of C- or higher."
+      ]
     },
     "MATH1301": {
       "normalized_code": "MATH1301",
@@ -2171,7 +2163,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1203",
@@ -2180,11 +2172,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "One of MATH 2233 , MATH 2234 , MATH 2235 , MATH 2333 , MGMT 2262 or ENVS 1105 , and both MATH 1200 and MATH 1203 , each with a grade of C- or higher."
+      ]
     },
     "MATH2101": {
       "normalized_code": "MATH2101",
@@ -2204,11 +2196,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 with a grade of C- or higher."
+      ]
     },
     "MATH2150": {
       "normalized_code": "MATH2150",
@@ -2252,11 +2244,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1200 with a grade of C- or higher."
+      ]
     },
     "MATH2233": {
       "normalized_code": "MATH2233",
@@ -2276,11 +2268,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1200 with a grade of C- or higher."
+      ]
     },
     "MATH2234": {
       "normalized_code": "MATH2234",
@@ -2300,11 +2292,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1200 with a grade of C- or higher."
+      ]
     },
     "MATH2235": {
       "normalized_code": "MATH2235",
@@ -2324,11 +2316,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1200 with a grade of C- or higher."
+      ]
     },
     "MATH2251": {
       "normalized_code": "MATH2251",
@@ -2337,22 +2329,14 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
-      "prerequisite_groups": [
-        {
-          "operator": "one_of",
-          "courses": [
-            {
-              "normalized_code": "MATH0130",
-              "display_code": "MATH 0130"
-            }
-          ]
-        }
-      ],
+      "prerequisite_groups": [],
       "parse_status": "review_required",
       "issues": [
-        "Prerequisite includes unmodeled conditions."
+        "Unsupported semicolon-separated prerequisite expression."
       ],
-      "non_course_requirements": []
+      "non_course_requirements": [
+        "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher."
+      ]
     },
     "MATH2303": {
       "normalized_code": "MATH2303",
@@ -2372,11 +2356,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 with a grade of C- or higher."
+      ]
     },
     "MATH2307": {
       "normalized_code": "MATH2307",
@@ -2420,11 +2404,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 with a grade of C- or higher."
+      ]
     },
     "MATH2319": {
       "normalized_code": "MATH2319",
@@ -2468,11 +2452,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2200 with a grade of C- or higher."
+      ]
     },
     "MATH2323": {
       "normalized_code": "MATH2323",
@@ -2492,11 +2476,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2321 with a grade of C- or higher."
+      ]
     },
     "MATH2333": {
       "normalized_code": "MATH2333",
@@ -2558,11 +2542,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1211 , MATH 1224 , MATH 2233 , MATH 2234 , MATH 2235 , MATH 2333 , ENVS 1105, or MGMT 2262 with a grade of C- or higher."
+      ]
     },
     "MATH3101": {
       "normalized_code": "MATH3101",
@@ -2739,10 +2723,8 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
+      "parse_status": "parsed",
+      "issues": [],
       "non_course_requirements": []
     },
     "MATH4101": {
@@ -2763,11 +2745,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2101 with a grade of C- or higher."
+      ]
     },
     "MATH4102": {
       "normalized_code": "MATH4102",
@@ -2787,11 +2769,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 3200 with a grade of C- or higher."
+      ]
     },
     "MATH4103": {
       "normalized_code": "MATH4103",
@@ -2863,11 +2845,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2101 with a grade of C- or higher."
+      ]
     },
     "MATH4199": {
       "normalized_code": "MATH4199",
@@ -2925,7 +2907,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2303",
@@ -2934,11 +2916,11 @@
           ]
         }
       ],
-      "parse_status": "review_required",
-      "issues": [
-        "Prerequisite includes unmodeled conditions."
-      ],
-      "non_course_requirements": []
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2200 and MATH 2303 , each with a grade of C- or higher."
+      ]
     },
     "DATA2402": {
       "normalized_code": "DATA2402",
@@ -3179,6 +3161,32 @@
             {
               "normalized_code": "MATH2234",
               "display_code": "MATH 2234"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1271",
+              "display_code": "MATH 1271"
+            },
+            {
+              "normalized_code": "MATH2071",
+              "display_code": "MATH 2071"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            },
+            {
+              "normalized_code": "DATA2402",
+              "display_code": "DATA 2402"
             }
           ]
         }
