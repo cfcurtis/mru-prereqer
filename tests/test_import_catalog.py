@@ -3,7 +3,9 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from import_catalog import (
+    Course,
     extract_courses,
+    filter_missing_internal_references,
     load_department_html,
     normalize_code,
     parse_prerequisites,
@@ -161,6 +163,39 @@ class CatalogExtractionTests(unittest.TestCase):
         )
         self.assertEqual(courses[0].parse_status, "parsed")
         self.assertEqual(len(courses[0].non_course_requirements), 1)
+
+
+class ReferenceFilteringTests(unittest.TestCase):
+    def test_removes_missing_internal_courses_and_keeps_external_courses(self):
+        course = Course(
+            normalized_code="COMP2000",
+            display_code="COMP 2000",
+            title="Example",
+            catalog_url="https://example.com",
+            catalog_status="returned_by_catalog",
+            prerequisite_groups=[
+                {
+                    "operator": "all_of",
+                    "courses": [
+                        {"normalized_code": "MATH1283", "display_code": "MATH 1283"},
+                        {"normalized_code": "GNED1101", "display_code": "GNED 1101"},
+                        {"normalized_code": "COMP1000", "display_code": "COMP 1000"},
+                    ],
+                },
+            ],
+        )
+
+        filter_missing_internal_references([course], {"COMP", "MATH", "DATA"})
+
+        self.assertEqual(
+            course.prerequisite_groups,
+            [
+                {
+                    "operator": "all_of",
+                    "courses": [{"normalized_code": "GNED1101", "display_code": "GNED 1101"}],
+                },
+            ],
+        )
 
 
 if __name__ == "__main__":

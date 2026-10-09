@@ -224,6 +224,28 @@ def unique_departments(values: Iterable[str]) -> list[str]:
     return list(dict.fromkeys(value.upper() for value in values))
 
 
+def filter_missing_internal_references(
+    courses: list[Course], included_departments: set[str]
+) -> None:
+    """Remove references absent from the imported listings of selected departments."""
+    available_codes = {course.normalized_code for course in courses}
+    for course in courses:
+        groups = []
+        for group in course.prerequisite_groups:
+            references = [
+                reference
+                for reference in group["courses"]
+                if (
+                    re.match(r"[A-Z]+", str(reference["normalized_code"])).group()
+                    not in included_departments
+                    or reference["normalized_code"] in available_codes
+                )
+            ]
+            if references:
+                groups.append({**group, "courses": references})
+        course.prerequisite_groups = groups
+
+
 def run_import(arguments: argparse.Namespace) -> int:
     output_dir = Path(arguments.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -245,6 +267,7 @@ def run_import(arguments: argparse.Namespace) -> int:
         issues.extend(department_issues)
         successful_departments.append(department)
 
+    filter_missing_internal_references(all_courses, set(successful_departments))
     generated_at = datetime.now(UTC).isoformat()
     data = {
         "metadata": {
