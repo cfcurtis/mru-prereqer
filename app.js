@@ -205,7 +205,10 @@ function deduplicateTree(root) {
       const groupNodes = [...new Set(links.map((link) => link.target))].filter(
         (node) => node.depth === column[0].depth,
       );
-      if (groupNodes.length < 2 || groupNodes.some((node) => claimedNodes.has(node))) {
+      if (
+        groupNodes.length < 2 ||
+        groupNodes.some((node) => claimedNodes.has(node) || !node.optional)
+      ) {
         continue;
       }
       groupNodes.sort((left, right) => left.diagramY - right.diagramY);
@@ -280,7 +283,11 @@ function drawTree(layer, graph, direction) {
   const choiceLayer = layer.append("g").attr("class", "choice-groups");
   for (const [, links] of choiceGroups) {
     const nodes = [...new Set(links.map((link) => link.target))];
-    if (nodes.length < 2 || new Set(nodes.map((node) => node.depth)).size > 1) {
+    if (
+      nodes.length < 2 ||
+      nodes.some((node) => !node.optional) ||
+      new Set(nodes.map((node) => node.depth)).size > 1
+    ) {
       continue;
     }
     const minX = d3.min(nodes, (node) => node.diagramX) - 90;
