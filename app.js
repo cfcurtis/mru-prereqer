@@ -186,9 +186,8 @@ function deduplicateTree(root) {
     (node) => node.depth,
   ).values()) {
     column.sort((left, right) => left.diagramY - right.diagramY);
-    const center = d3.mean(column, (node) => node.diagramY);
     column.forEach((node, index) => {
-      node.diagramY = center + (index - (column.length - 1) / 2) * 62;
+      node.diagramY = (index - (column.length - 1) / 2) * 62;
     });
   }
 
@@ -212,7 +211,7 @@ function relationshipPath(link) {
   }
 
   const side = source.diagramX < 0 ? -1 : 1;
-  const laneX = source.diagramX + side * 112;
+  const laneX = source.diagramX + side * 156;
   return [
     `M${source.diagramX + side * sourceOffset},${source.diagramY}`,
     `C${laneX},${source.diagramY}`,
