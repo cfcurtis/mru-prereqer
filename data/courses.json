@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T17:27:28.378085+00:00",
+    "generated_at": "2026-10-09T17:39:40.843036+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -1200,11 +1200,36 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "COMP 2631 , MATH 2234 , and one of MATH 1271 or MATH 2071 ; all with a minimum grade of C-.",
-      "prerequisite_groups": [],
-      "parse_status": "review_required",
-      "issues": [
-        "Nested or compound prerequisite expression."
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            },
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1271",
+              "display_code": "MATH 1271"
+            },
+            {
+              "normalized_code": "MATH2071",
+              "display_code": "MATH 2071"
+            }
+          ]
+        }
       ],
+      "parse_status": "parsed",
+      "issues": [],
       "non_course_requirements": [
         "COMP 2631 , MATH 2234 , and one of MATH 1271 or MATH 2071 ; all with a minimum grade of C-."
       ]
@@ -1997,10 +2022,20 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
-      "prerequisite_groups": [],
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH0130",
+              "display_code": "MATH 0130"
+            }
+          ]
+        }
+      ],
       "parse_status": "review_required",
       "issues": [
-        "Nested or compound prerequisite expression."
+        "Prerequisite includes unmodeled conditions."
       ],
       "non_course_requirements": []
     },
@@ -2302,10 +2337,20 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
-      "prerequisite_groups": [],
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH0130",
+              "display_code": "MATH 0130"
+            }
+          ]
+        }
+      ],
       "parse_status": "review_required",
       "issues": [
-        "Nested or compound prerequisite expression."
+        "Prerequisite includes unmodeled conditions."
       ],
       "non_course_requirements": []
     },
@@ -3127,11 +3172,19 @@
       "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
       "catalog_status": "returned_by_catalog",
       "source_prerequisite_text": "MATH 2234 ; and one of MATH 1271 or MATH 2071 , and one of COMP 2631 or DATA 2402 , all with a minimum grade of C-.",
-      "prerequisite_groups": [],
-      "parse_status": "review_required",
-      "issues": [
-        "Nested or compound prerequisite expression."
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            }
+          ]
+        }
       ],
+      "parse_status": "parsed",
+      "issues": [],
       "non_course_requirements": [
         "MATH 2234 ; and one of MATH 1271 or MATH 2071 , and one of COMP 2631 or DATA 2402 , all with a minimum grade of C-."
       ]
