@@ -350,7 +350,8 @@ function renderDiagram() {
 
 function updateSummary(course) {
   selectedCourse.textContent = `${course.display_code} — ${course.title}`;
-  courseNotes.textContent = course.non_course_requirements.join(" ");
+  courseNotes.textContent = course.source_prerequisite_text ?? "";
+  courseNotes.hidden = !course.source_prerequisite_text;
   catalogLink.href = catalogSearchUrl(course);
   catalogLink.hidden = false;
 }
