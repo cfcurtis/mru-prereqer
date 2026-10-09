@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T18:38:35.231367+00:00",
+    "generated_at": "2026-10-09T18:43:32.919346+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -2570,7 +2570,7 @@
       "source_prerequisite_text": "MATH 1200 , MATH 1203 , one of MATH 2233 or MATH 2234 or MATH 2233 , and one of MATH 2071 or MATH 1271 , all with grades of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2579,7 +2579,12 @@
             {
               "normalized_code": "MATH1203",
               "display_code": "MATH 1203"
-            },
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
             {
               "normalized_code": "MATH2233",
               "display_code": "MATH 2233"
