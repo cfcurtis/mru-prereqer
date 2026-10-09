@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MRU Course Prerequisites</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <p class="eyebrow">Mount Royal University</p>
+        <h1>Course prerequisites</h1>
+        <p class="intro">Explore the courses that lead to a course, and the courses it unlocks.</p>
+      </header>
+
+      <section class="search-panel" aria-labelledby="search-heading">
+        <div>
+          <h2 id="search-heading">Find a course</h2>
+          <p>Enter an exact course code, such as <strong>COMP 2511</strong>.</p>
+        </div>
+        <form id="course-search">
+          <label class="sr-only" for="course-code">Course code</label>
+          <input id="course-code" name="course-code" list="course-codes" placeholder="COMP 2511" autocomplete="off" required>
+          <datalist id="course-codes"></datalist>
+          <button type="submit">Show course</button>
+        </form>
+        <p id="search-message" class="search-message" role="status"></p>
+      </section>
+
+      <section class="course-summary" aria-live="polite">
+        <div>
+          <p class="eyebrow">Selected course</p>
+          <h2 id="selected-course">Loading courses…</h2>
+          <p id="course-notes"></p>
+        </div>
+        <a id="catalog-link" class="catalog-link" href="#" target="_blank" rel="noreferrer">View in catalog</a>
+      </section>
+
+      <section class="diagram-panel" aria-labelledby="diagram-heading">
+        <div class="diagram-heading">
+          <div>
+            <h2 id="diagram-heading">Course pathway</h2>
+            <p>Click any course to recenter. Scroll or pinch to zoom, then drag to pan.</p>
+          </div>
+          <div class="legend" aria-label="Diagram legend">
+            <span><i class="legend-dot required"></i> Required course</span>
+            <span><i class="legend-dot optional"></i> One-of option</span>
+            <span><i class="legend-choice"></i> Choose one</span>
+          </div>
+        </div>
+        <div id="diagram" class="diagram" aria-label="Interactive prerequisite diagram"></div>
+      </section>
+    </main>
+  </body>
+</html>
