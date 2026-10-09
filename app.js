@@ -213,11 +213,13 @@ function renderDiagram() {
   const xValues = nodes.map((node) => node.diagramX);
   const yValues = nodes.map((node) => node.diagramY);
   const padding = 160;
+  const horizontalExtent = Math.max(...xValues.map(Math.abs), 0) + padding;
+  const verticalExtent = Math.max(...yValues.map(Math.abs), 0) + padding;
   const viewBox = [
-    Math.min(...xValues, 0) - padding,
-    Math.min(...yValues, 0) - padding,
-    Math.max(...xValues, 0) - Math.min(...xValues, 0) + padding * 2,
-    Math.max(...yValues, 0) - Math.min(...yValues, 0) + padding * 2,
+    -horizontalExtent,
+    -verticalExtent,
+    horizontalExtent * 2,
+    verticalExtent * 2,
   ];
 
   const svg = d3
