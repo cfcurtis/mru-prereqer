@@ -1,7 +1,7 @@
 {
   "metadata": {
     "catalog_id": "38",
-    "generated_at": "2026-10-09T17:42:01.117699+00:00",
+    "generated_at": "2026-10-09T18:28:40.404883+00:00",
     "source_departments": [
       "COMP",
       "MATH",
@@ -520,7 +520,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP1633",
@@ -544,7 +544,7 @@
       "source_prerequisite_text": "COMP 1633 with a minimum grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP1633",
@@ -568,7 +568,7 @@
       "source_prerequisite_text": "COMP 2631 with a minimum grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP2631",
@@ -592,7 +592,7 @@
       "source_prerequisite_text": "COMP 2631 with a minimum grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP2631",
@@ -616,7 +616,7 @@
       "source_prerequisite_text": "COMP 1633 with a minimum grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP1633",
@@ -649,7 +649,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP2655",
@@ -1043,7 +1043,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "COMP2541",
@@ -1280,7 +1280,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "PHIL1179",
@@ -2040,7 +2040,7 @@
       "source_prerequisite_text": "MATH 1200 with a grade of C- or higher or Mathematics 30-1/ MATH 0130 with a grade of 65% or higher and Mathematics 31/ MATH 0131 with a grade of 50% or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2053,7 +2053,7 @@
           ]
         },
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH0131",
@@ -2077,7 +2077,7 @@
       "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1203",
@@ -2187,7 +2187,7 @@
       "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1203",
@@ -2211,7 +2211,7 @@
       "source_prerequisite_text": "Mathematics 30-1 or MATH 1150 or the permission of the department.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1150",
@@ -2235,7 +2235,7 @@
       "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2259,7 +2259,7 @@
       "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2283,7 +2283,7 @@
       "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2307,7 +2307,7 @@
       "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1200",
@@ -2347,7 +2347,7 @@
       "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1203",
@@ -2395,7 +2395,7 @@
       "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1203",
@@ -2419,7 +2419,7 @@
       "source_prerequisite_text": "MATH 2200 with a C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2200",
@@ -2443,7 +2443,7 @@
       "source_prerequisite_text": "MATH 2200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2200",
@@ -2467,7 +2467,7 @@
       "source_prerequisite_text": "MATH 2321 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2321",
@@ -2627,7 +2627,7 @@
       "source_prerequisite_text": "MATH 1102 or permission of department.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH1102",
@@ -2736,7 +2736,7 @@
       "source_prerequisite_text": "MATH 2101 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2101",
@@ -2760,7 +2760,7 @@
       "source_prerequisite_text": "MATH 3200 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH3200",
@@ -2784,7 +2784,7 @@
       "source_prerequisite_text": "MATH 3200 with grades of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH3200",
@@ -2836,7 +2836,7 @@
       "source_prerequisite_text": "MATH 2101 with a grade of C- or higher.",
       "prerequisite_groups": [
         {
-          "operator": "one_of",
+          "operator": "all_of",
           "courses": [
             {
               "normalized_code": "MATH2101",
