@@ -63,7 +63,7 @@ class CatalogExtractionTests(unittest.TestCase):
                 "<html>catalog</html>",
             )
 
-    def test_extracts_course_and_individual_catalog_link(self):
+    def test_extracts_printer_friendly_course_block(self):
         html = """
         <ul><li>
           <h3>COMP 2511 - Data Structures</h3>

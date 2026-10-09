@@ -54,13 +54,16 @@ def normalize_space(value: str) -> str:
     return " ".join(value.replace("\xa0", " ").split())
 
 
+def format_course_code(subject: str, number: str) -> tuple[str, str]:
+    subject, number = subject.upper(), number.upper()
+    return f"{subject}{number}", f"{subject} {number}"
+
+
 def normalize_code(value: str) -> tuple[str, str] | None:
     match = COURSE_CODE_RE.search(value)
     if not match:
         return None
-    subject, number = match.groups()
-    subject, number = subject.upper(), number.upper()
-    return f"{subject}{number}", f"{subject} {number}"
+    return format_course_code(*match.groups())
 
 
 def build_catalog_url(department: str, catalog_id: str) -> str:
@@ -99,13 +102,11 @@ def course_references(text: str) -> list[dict[str, str]]:
     references: list[dict[str, str]] = []
     seen: set[str] = set()
     for subject, number in COURSE_CODE_RE.findall(text):
-        normalized = f"{subject.upper()}{number.upper()}"
+        normalized, display = format_course_code(subject, number)
         if normalized in seen:
             continue
         seen.add(normalized)
-        references.append(
-            {"normalized_code": normalized, "display_code": f"{subject.upper()} {number.upper()}"}
-        )
+        references.append({"normalized_code": normalized, "display_code": display})
     return references
 
 
@@ -145,6 +146,19 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     return groups, "parsed", [], notes
 
 
+def prerequisite_text(block: object) -> str | None:
+    match = re.search(
+        r"Prerequisite\(s\):</em>\s*(?P<fragment>.*?)(?:<br\s*/?>|$)",
+        str(block),
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not match:
+        return None
+    return normalize_space(
+        BeautifulSoup(match.group("fragment"), "html.parser").get_text(" ", strip=True)
+    )
+
+
 def extract_courses(html: str, department: str, source_url: str) -> tuple[list[Course], list[Issue]]:
     soup = BeautifulSoup(html, "html.parser")
     courses: list[Course] = []
@@ -160,16 +174,7 @@ def extract_courses(html: str, department: str, source_url: str) -> tuple[list[C
             continue
         normalized_code, display_code = code
         title = re.sub(rf"^{re.escape(display_code)}\s*", "", heading_text, flags=re.I)
-        prerequisite_match = re.search(
-            r"Prerequisite\(s\):</em>\s*(?P<fragment>.*?)(?:<br\s*/?>|$)",
-            str(block),
-            re.IGNORECASE | re.DOTALL,
-        )
-        requirement_text = None
-        if prerequisite_match:
-            requirement_text = normalize_space(BeautifulSoup(
-                prerequisite_match.group("fragment"), "html.parser"
-            ).get_text(" ", strip=True))
+        requirement_text = prerequisite_text(block)
         groups, status, parse_issues, notes = parse_prerequisites(requirement_text or "")
         course = Course(
             normalized_code=normalized_code,
