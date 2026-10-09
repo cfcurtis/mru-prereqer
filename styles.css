@@ -262,10 +262,6 @@ button:hover {
   stroke: var(--gold);
 }
 
-.node.optional {
-  opacity: 0.62;
-}
-
 .node.optional:hover,
 .node.optional:focus {
   opacity: 1;
