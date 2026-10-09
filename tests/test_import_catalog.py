@@ -66,6 +66,36 @@ class PrerequisiteParserTests(unittest.TestCase):
         self.assertEqual([group["operator"] for group in groups], ["all_of", "one_of"])
         self.assertEqual(len(notes), 1)
 
+    def test_parses_semicolon_and_required_groups_before_grade_note(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "MATH 2234; and one of MATH 1271 or MATH 2071, and one of "
+            "COMP 2631 or DATA 2402, all with a minimum grade of C-."
+        )
+
+        self.assertEqual(status, "parsed")
+        self.assertEqual(issues, [])
+        self.assertEqual(
+            [[course["normalized_code"] for course in group["courses"]] for group in groups],
+            [["MATH2234"], ["MATH1271", "MATH2071"], ["COMP2631", "DATA2402"]],
+        )
+        self.assertEqual(
+            [group["operator"] for group in groups],
+            ["all_of", "one_of", "one_of"],
+        )
+        self.assertEqual(len(notes), 1)
+
+    def test_rejects_mixed_semicolon_alternatives(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; "
+            "or MATH 1283 or MATH 1285 with a grade of B- or higher; and "
+            "MATH 31 or MATH 0131 with a grade of 50% or higher."
+        )
+
+        self.assertEqual(groups, [])
+        self.assertEqual(status, "review_required")
+        self.assertEqual(issues, ["Unsupported semicolon-separated prerequisite expression."])
+        self.assertEqual(len(notes), 1)
+
 
 class CatalogExtractionTests(unittest.TestCase):
     def test_loads_manually_downloaded_department_html(self):

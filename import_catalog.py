@@ -23,7 +23,11 @@ REQUIREMENT_LABEL_RE = re.compile(
 )
 NON_COURSE_RE = re.compile(
     r"\b(?:consent|permission|placement|standing|minimum grade|GPA|"
-    r"program admission|department approval)\b",
+    r"program admission|department approval|with a grade)\b",
+    re.I,
+)
+TRAILING_GRADE_NOTE_RE = re.compile(
+    r"(?:;|,)\s*(?:all|each)?\s*with\b.*$",
     re.I,
 )
 
@@ -118,7 +122,12 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     if not course_parts:
         return [], "not_applicable", [], notes
 
-    course_parts = course_parts.split(";", maxsplit=1)[0].strip()
+    course_parts = TRAILING_GRADE_NOTE_RE.sub("", course_parts).strip()
+    if ";" in course_parts:
+        separators = re.findall(r";\s*(\w+)", course_parts, re.I)
+        if not separators or any(separator.lower() != "and" for separator in separators):
+            return [], "review_required", ["Unsupported semicolon-separated prerequisite expression."], notes
+        course_parts = re.sub(r";\s*and\s+", " and ", course_parts, flags=re.I)
     if "(" in course_parts or ")" in course_parts:
         return [], "review_required", ["Nested or compound prerequisite expression."], notes
 
