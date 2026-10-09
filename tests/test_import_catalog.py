@@ -51,6 +51,16 @@ class PrerequisiteParserTests(unittest.TestCase):
             ["COMP1631", "COMP1701"],
         )
 
+    def test_does_not_treat_grade_language_as_a_course_alternative(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "MATH 1203 with a grade of C- or higher."
+        )
+
+        self.assertEqual(status, "parsed")
+        self.assertEqual(issues, [])
+        self.assertEqual(groups[0]["operator"], "all_of")
+        self.assertEqual(len(notes), 1)
+
     def test_parses_required_and_optional_courses_before_grade_note(self):
         groups, status, issues, notes = parse_prerequisites(
             "COMP 2631, MATH 2234, and one of MATH 1271 or MATH 2071; "

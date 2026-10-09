@@ -18,6 +18,10 @@ from bs4 import BeautifulSoup
 CATALOG_BASE_URL = "https://catalog.mtroyal.ca/content.php"
 DEFAULT_DEPARTMENTS = ("COMP", "MATH", "DATA")
 COURSE_CODE_RE = re.compile(r"\b([A-Z]{2,8})\s*-?\s*(\d{4}[A-Z]?)\b", re.I)
+COURSE_ALTERNATIVE_RE = re.compile(
+    rf"{COURSE_CODE_RE.pattern}\s*,?\s+or\s+{COURSE_CODE_RE.pattern}",
+    re.I,
+)
 REQUIREMENT_LABEL_RE = re.compile(
     r"(?:prerequisite|pre-requisite)s?\s*:\s*", re.I
 )
@@ -141,7 +145,7 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
             return [], "review_required", ["Prerequisite text contains no recognizable course code."], notes
         operator = (
             "one_of"
-            if re.search(r"\b(?:or|one\s+of)\b|/", part, re.I)
+            if re.search(r"\bone\s+of\b", part, re.I) or COURSE_ALTERNATIVE_RE.search(part)
             else "all_of"
         )
         groups.append({"operator": operator, "courses": references})
