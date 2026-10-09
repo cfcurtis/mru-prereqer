@@ -11,7 +11,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Iterable
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -190,8 +190,24 @@ def prerequisite_text(block: object) -> str | None:
     )
 
 
+def extract_course_urls(soup: BeautifulSoup) -> dict[str, str]:
+    urls: dict[str, str] = {}
+    for anchor in soup.select("a[href*='preview_course']"):
+        code = normalize_code(anchor.get_text(" ", strip=True))
+        parameters = parse_qs(urlparse(str(anchor.get("href") or "")).query)
+        catalog_id = parameters.get("catoid", [None])[0]
+        course_id = parameters.get("coid", [None])[0]
+        if code and catalog_id and course_id:
+            urls[code[0]] = (
+                "https://catalog.mtroyal.ca/preview_course.php?"
+                + urlencode({"catoid": catalog_id, "coid": course_id})
+            )
+    return urls
+
+
 def extract_courses(html: str, department: str, source_url: str) -> tuple[list[Course], list[Issue]]:
     soup = BeautifulSoup(html, "html.parser")
+    course_urls = extract_course_urls(soup)
     courses: list[Course] = []
     issues: list[Issue] = []
 
@@ -211,7 +227,7 @@ def extract_courses(html: str, department: str, source_url: str) -> tuple[list[C
             normalized_code=normalized_code,
             display_code=display_code,
             title=title.strip(" -:"),
-            catalog_url=source_url,
+            catalog_url=course_urls.get(normalized_code, source_url),
             catalog_status="returned_by_catalog",
             source_prerequisite_text=requirement_text,
             prerequisite_groups=groups,

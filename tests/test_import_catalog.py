@@ -169,6 +169,7 @@ class CatalogExtractionTests(unittest.TestCase):
           COMP 1631</a> or COMP 1701 with a minimum grade of C-.
           <br>
         </li></ul>
+        <a href="preview_course_nopop.php?catoid=38&amp;coid=456">COMP 2511</a>
         """
 
         courses, issues = extract_courses(
@@ -180,7 +181,7 @@ class CatalogExtractionTests(unittest.TestCase):
         self.assertEqual(courses[0].title, "Data Structures")
         self.assertEqual(
             courses[0].catalog_url,
-            "https://catalog.mtroyal.ca/content.php",
+            "https://catalog.mtroyal.ca/preview_course.php?catoid=38&coid=456",
         )
         self.assertEqual(courses[0].parse_status, "parsed")
         self.assertEqual(len(courses[0].non_course_requirements), 1)
