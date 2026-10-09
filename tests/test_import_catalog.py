@@ -115,6 +115,27 @@ class PrerequisiteParserTests(unittest.TestCase):
         )
         self.assertEqual(len(notes), 1)
 
+    def test_splits_required_courses_before_one_of_group(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "MATH 1200, MATH 1203, one of MATH 2233 or MATH 2234, "
+            "and one of MATH 2071 or MATH 1271, all with grades of C- or higher."
+        )
+
+        self.assertEqual(status, "parsed")
+        self.assertEqual(issues, [])
+        self.assertEqual(
+            [
+                (group["operator"], [course["normalized_code"] for course in group["courses"]])
+                for group in groups
+            ],
+            [
+                ("all_of", ["MATH1200", "MATH1203"]),
+                ("one_of", ["MATH2233", "MATH2234"]),
+                ("one_of", ["MATH2071", "MATH1271"]),
+            ],
+        )
+        self.assertEqual(notes, [])
+
     def test_rejects_mixed_semicolon_alternatives(self):
         groups, status, issues, notes = parse_prerequisites(
             "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; "

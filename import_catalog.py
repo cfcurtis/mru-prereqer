@@ -143,6 +143,16 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     and_parts = re.split(r"\s+(?:and|&)\s+", course_parts, flags=re.I)
     groups: list[dict[str, object]] = []
     for part in and_parts:
+        one_of_match = re.search(r"\bone\s+of\b", part, re.I)
+        if one_of_match:
+            required_references = course_references(part[:one_of_match.start()])
+            optional_references = course_references(part[one_of_match.end():])
+            if required_references:
+                groups.append({"operator": "all_of", "courses": required_references})
+            if optional_references:
+                groups.append({"operator": "one_of", "courses": optional_references})
+                continue
+
         references = course_references(part)
         if not references:
             if COURSE_CODE_RE.search(part):
