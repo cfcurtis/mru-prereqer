@@ -65,17 +65,15 @@ function prerequisiteTree(code, path = new Set(), optional = false) {
   const nextPath = new Set(path).add(code);
   const children = [];
 
-  for (const group of course?.prerequisite_groups ?? []) {
+  for (const [index, group] of (course?.prerequisite_groups ?? []).entries()) {
     if (group.operator === "one_of") {
-      children.push({
-        id: `${code}-choice-${children.length}`,
-        label: "Choose one",
-        kind: "choice",
-        optional: true,
-        children: group.courses.map((item) =>
-          prerequisiteTree(item.normalized_code, nextPath, true),
-        ),
-      });
+      const choiceGroup = `${code}-choice-${index}`;
+      children.push(
+        ...group.courses.map((item) => ({
+          ...prerequisiteTree(item.normalized_code, nextPath, true),
+          choiceGroup,
+        })),
+      );
     } else {
       children.push(
         ...group.courses.map((item) =>
@@ -133,6 +131,30 @@ function layoutTree(tree, direction) {
 }
 
 function drawTree(layer, root) {
+  const choiceGroups = d3.groups(
+    root.descendants().filter((node) => node.data.choiceGroup),
+    (node) => node.data.choiceGroup,
+  );
+  const choiceLayer = layer.append("g").attr("class", "choice-groups");
+  for (const [, nodes] of choiceGroups) {
+    const minX = d3.min(nodes, (node) => node.diagramX) - 90;
+    const maxX = d3.max(nodes, (node) => node.diagramX) + 90;
+    const minY = d3.min(nodes, (node) => node.diagramY) - 38;
+    const maxY = d3.max(nodes, (node) => node.diagramY) + 38;
+    choiceLayer
+      .append("rect")
+      .attr("x", minX)
+      .attr("y", minY)
+      .attr("width", maxX - minX)
+      .attr("height", maxY - minY)
+      .attr("rx", 12);
+    choiceLayer
+      .append("text")
+      .attr("x", minX + 12)
+      .attr("y", minY + 17)
+      .text("CHOOSE ONE");
+  }
+
   const links = root.links();
   layer
     .selectAll("path")

@@ -214,8 +214,8 @@ button:hover {
 
 .legend-choice {
   border-radius: 3px;
-  border-style: dashed;
   background: var(--gold-light);
+  border-color: #e7c388;
 }
 
 .diagram {
@@ -256,14 +256,16 @@ button:hover {
   stroke-width: 1.5;
 }
 
-.node.optional rect,
-.node.choice rect {
+.node.optional rect {
   fill: var(--gold-light);
   stroke: var(--gold);
 }
 
-.node.choice rect {
-  stroke-dasharray: 4 3;
+.choice-groups rect {
+  fill: var(--gold-light);
+  fill-opacity: 0.72;
+  stroke: #e7c388;
+  stroke-width: 1;
 }
 
 .node.selected rect {
@@ -279,8 +281,11 @@ button:hover {
   text-anchor: middle;
 }
 
-.node.choice text {
+.choice-groups text {
   fill: #80500f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .node.selected text {
