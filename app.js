@@ -282,7 +282,7 @@ async function loadCourses() {
         courseCodes.append(option);
       });
     buildReverseIndex();
-    selectCourse(state.courses.COMP2511 ? "COMP2511" : Object.keys(state.courses)[0]);
+    selectCourse(state.courses.MATH2234 ? "MATH2234" : Object.keys(state.courses)[0]);
   } catch (error) {
     selectedCourse.textContent = "Course data unavailable";
     searchMessage.textContent = error.message;
