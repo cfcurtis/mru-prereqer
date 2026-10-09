@@ -187,7 +187,7 @@ function deduplicateTree(root) {
   ).values()) {
     column.sort((left, right) => left.diagramY - right.diagramY);
     column.forEach((node, index) => {
-      node.diagramY = (index - (column.length - 1) / 2) * 62;
+      node.diagramY = (index - (column.length - 1) / 2) * 50;
     });
   }
 
