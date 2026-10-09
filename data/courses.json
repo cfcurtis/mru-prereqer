@@ -1,0 +1,3154 @@
+{
+  "metadata": {
+    "catalog_id": "38",
+    "generated_at": "2026-10-09T17:27:28.378085+00:00",
+    "source_departments": [
+      "COMP",
+      "MATH",
+      "DATA"
+    ]
+  },
+  "courses": {
+    "COMP1001": {
+      "normalized_code": "COMP1001",
+      "display_code": "COMP 1001",
+      "title": "Introduction to Computer-Based Problem Solving for the Sciences",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1103": {
+      "normalized_code": "COMP1103",
+      "display_code": "COMP 1103",
+      "title": "Introduction to Computers",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1104": {
+      "normalized_code": "COMP1104",
+      "display_code": "COMP 1104",
+      "title": "Computing and Digital Citizenry",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1199": {
+      "normalized_code": "COMP1199",
+      "display_code": "COMP 1199",
+      "title": "Directed Readings",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1205": {
+      "normalized_code": "COMP1205",
+      "display_code": "COMP 1205",
+      "title": "Introduction to Computing for Public Relations",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1207": {
+      "normalized_code": "COMP1207",
+      "display_code": "COMP 1207",
+      "title": "Introduction to Digital Technologies",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1209": {
+      "normalized_code": "COMP1209",
+      "display_code": "COMP 1209",
+      "title": "Introduction to Computing for Applied Degrees",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1299": {
+      "normalized_code": "COMP1299",
+      "display_code": "COMP 1299",
+      "title": "Directed Readings",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1370": {
+      "normalized_code": "COMP1370",
+      "display_code": "COMP 1370",
+      "title": "Introduction to Internet Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1501": {
+      "normalized_code": "COMP1501",
+      "display_code": "COMP 1501",
+      "title": "Programming I: Introduction to Problem Solving and Programming",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1502": {
+      "normalized_code": "COMP1502",
+      "display_code": "COMP 1502",
+      "title": "Programming II: Object Oriented Programming",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1501 or COMP 2511 or COMP 1701 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1501",
+              "display_code": "COMP 1501"
+            },
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            },
+            {
+              "normalized_code": "COMP1701",
+              "display_code": "COMP 1701"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1501 or COMP 2511 or COMP 1701 with a minimum grade of C-."
+      ]
+    },
+    "COMP1615": {
+      "normalized_code": "COMP1615",
+      "display_code": "COMP 1615",
+      "title": "Introduction to Programming",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1631": {
+      "normalized_code": "COMP1631",
+      "display_code": "COMP 1631",
+      "title": "Introduction to Computer Science I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP1633": {
+      "normalized_code": "COMP1633",
+      "display_code": "COMP 1633",
+      "title": "Introduction to Computer Science II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1631 or COMP 1701 with a minimum grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1631",
+              "display_code": "COMP 1631"
+            },
+            {
+              "normalized_code": "COMP1701",
+              "display_code": "COMP 1701"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1631 or COMP 1701 with a minimum grade of C- or higher."
+      ]
+    },
+    "COMP1701": {
+      "normalized_code": "COMP1701",
+      "display_code": "COMP 1701",
+      "title": "Introduction to Problem Solving and Programming",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP2001": {
+      "normalized_code": "COMP2001",
+      "display_code": "COMP 2001",
+      "title": "Computer-Based Problem Solving for the Sciences",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of GNED 1101 , GNED 1102 , GNED 1103 , MATH 1200 , BIOL 1202 , CHEM 1201 , or PHYS 1201 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "GNED1101",
+              "display_code": "GNED 1101"
+            },
+            {
+              "normalized_code": "GNED1102",
+              "display_code": "GNED 1102"
+            },
+            {
+              "normalized_code": "GNED1103",
+              "display_code": "GNED 1103"
+            },
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            },
+            {
+              "normalized_code": "BIOL1202",
+              "display_code": "BIOL 1202"
+            },
+            {
+              "normalized_code": "CHEM1201",
+              "display_code": "CHEM 1201"
+            },
+            {
+              "normalized_code": "PHYS1201",
+              "display_code": "PHYS 1201"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP2002": {
+      "normalized_code": "COMP2002",
+      "display_code": "COMP 2002",
+      "title": "Creative Problem Solving and Programming",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of GNED 1101 , GNED 1102 , GNED 1103 , or MATH 1200 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "GNED1101",
+              "display_code": "GNED 1101"
+            },
+            {
+              "normalized_code": "GNED1102",
+              "display_code": "GNED 1102"
+            },
+            {
+              "normalized_code": "GNED1103",
+              "display_code": "GNED 1103"
+            },
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP2008": {
+      "normalized_code": "COMP2008",
+      "display_code": "COMP 2008",
+      "title": "Scientific Computing I: Modeling and Simulation",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1001 or COMP 2001 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1001",
+              "display_code": "COMP 1001"
+            },
+            {
+              "normalized_code": "COMP2001",
+              "display_code": "COMP 2001"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1001 or COMP 2001 with a minimum grade of C-."
+      ]
+    },
+    "COMP2503": {
+      "normalized_code": "COMP2503",
+      "display_code": "COMP 2503",
+      "title": "Programming III: Data Structures",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1502 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1502 with a minimum grade of C-."
+      ]
+    },
+    "COMP2511": {
+      "normalized_code": "COMP2511",
+      "display_code": "COMP 2511",
+      "title": "Web I: Client Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of COMP 1001 , COMP 1501 , COMP 1615 , COMP 1631 , COMP 1701 or COMP 2001 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1001",
+              "display_code": "COMP 1001"
+            },
+            {
+              "normalized_code": "COMP1501",
+              "display_code": "COMP 1501"
+            },
+            {
+              "normalized_code": "COMP1615",
+              "display_code": "COMP 1615"
+            },
+            {
+              "normalized_code": "COMP1631",
+              "display_code": "COMP 1631"
+            },
+            {
+              "normalized_code": "COMP1701",
+              "display_code": "COMP 1701"
+            },
+            {
+              "normalized_code": "COMP2001",
+              "display_code": "COMP 2001"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "One of COMP 1001 , COMP 1501 , COMP 1615 , COMP 1631 , COMP 1701 or COMP 2001 with a minimum grade of C-."
+      ]
+    },
+    "COMP2521": {
+      "normalized_code": "COMP2521",
+      "display_code": "COMP 2521",
+      "title": "Database I: Data Modeling and Query Languages",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of C- in one of COMP 1502 or COMP 2511 or COMP 1633 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            },
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            },
+            {
+              "normalized_code": "COMP1633",
+              "display_code": "COMP 1633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of C- in one of COMP 1502 or COMP 2511 or COMP 1633 ."
+      ]
+    },
+    "COMP2531": {
+      "normalized_code": "COMP2531",
+      "display_code": "COMP 2531",
+      "title": "Computer Architecture and Operating Systems",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1502 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1502 with a minimum grade of C-."
+      ]
+    },
+    "COMP2541": {
+      "normalized_code": "COMP2541",
+      "display_code": "COMP 2541",
+      "title": "Systems Analysis",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of INFO 1661 , \u200b ENGL 2263 or MGMT 3210 with a minimum grade of C- and one of COMP 1502 or COMP 2511 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "INFO1661",
+              "display_code": "INFO 1661"
+            },
+            {
+              "normalized_code": "ENGL2263",
+              "display_code": "ENGL 2263"
+            },
+            {
+              "normalized_code": "MGMT3210",
+              "display_code": "MGMT 3210"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            },
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "One of INFO 1661 , \u200b ENGL 2263 or MGMT 3210 with a minimum grade of C- and one of COMP 1502 or COMP 2511 with a minimum grade of C-."
+      ]
+    },
+    "COMP2613": {
+      "normalized_code": "COMP2613",
+      "display_code": "COMP 2613",
+      "title": "Introduction to Computability",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1271 and COMP 1633 with minimum grades of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1271",
+              "display_code": "MATH 1271"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1633",
+              "display_code": "COMP 1633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP2631": {
+      "normalized_code": "COMP2631",
+      "display_code": "COMP 2631",
+      "title": "Information Structures I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1633 with a minimum grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1633",
+              "display_code": "COMP 1633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1633 with a minimum grade of C- or higher."
+      ]
+    },
+    "COMP2633": {
+      "normalized_code": "COMP2633",
+      "display_code": "COMP 2633",
+      "title": "Foundations of Software Engineering",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2631 with a minimum grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2631 with a minimum grade of C- or higher."
+      ]
+    },
+    "COMP2635": {
+      "normalized_code": "COMP2635",
+      "display_code": "COMP 2635",
+      "title": "Information Structures II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2631 with a minimum grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2631 with a minimum grade of C- or higher."
+      ]
+    },
+    "COMP2655": {
+      "normalized_code": "COMP2655",
+      "display_code": "COMP 2655",
+      "title": "Computing Machinery I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 1633 with a minimum grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1633",
+              "display_code": "COMP 1633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 1633 with a minimum grade of C- or higher."
+      ]
+    },
+    "COMP2659": {
+      "normalized_code": "COMP2659",
+      "display_code": "COMP 2659",
+      "title": "Computing Machinery II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "PHIL 1179 and COMP 2655 with minimum grades of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "PHIL1179",
+              "display_code": "PHIL 1179"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2655",
+              "display_code": "COMP 2655"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3008": {
+      "normalized_code": "COMP3008",
+      "display_code": "COMP 3008",
+      "title": "Scientific Computing II: Data and Visualization",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2008 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2008",
+              "display_code": "COMP 2008"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2008 with a minimum grade of C-."
+      ]
+    },
+    "COMP3012": {
+      "normalized_code": "COMP3012",
+      "display_code": "COMP 3012",
+      "title": "Robotics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A grade of C- or higher in one of COMP 1502, COMP 1633, or COMP 2531 and a grade or C- or higher in one of MATH 1200, MATH 1203, or MATH 1505.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            },
+            {
+              "normalized_code": "COMP1633",
+              "display_code": "COMP 1633"
+            },
+            {
+              "normalized_code": "COMP2531",
+              "display_code": "COMP 2531"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            },
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            },
+            {
+              "normalized_code": "MATH1505",
+              "display_code": "MATH 1505"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3110": {
+      "normalized_code": "COMP3110",
+      "display_code": "COMP 3110",
+      "title": "Data-Driven Thinking: Foundations of Data and Machine Learning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of GNED 1101 , GNED 1102 , or GNED 1103",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "GNED1101",
+              "display_code": "GNED 1101"
+            },
+            {
+              "normalized_code": "GNED1102",
+              "display_code": "GNED 1102"
+            },
+            {
+              "normalized_code": "GNED1103",
+              "display_code": "GNED 1103"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP3307": {
+      "normalized_code": "COMP3307",
+      "display_code": "COMP 3307",
+      "title": "Computing Applications in Small Business and Entrepreneurship",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP3309": {
+      "normalized_code": "COMP3309",
+      "display_code": "COMP 3309",
+      "title": "Information Technology and Society",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "GNED 1301 or GNED 1303 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "GNED1301",
+              "display_code": "GNED 1301"
+            },
+            {
+              "normalized_code": "GNED1303",
+              "display_code": "GNED 1303"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP3504": {
+      "normalized_code": "COMP3504",
+      "display_code": "COMP 3504",
+      "title": "Programming IV: Software Engineering",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2503 and COMP 2541 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2503 and COMP 2541 with a minimum grade of C-."
+      ]
+    },
+    "COMP3505": {
+      "normalized_code": "COMP3505",
+      "display_code": "COMP 3505",
+      "title": "Software Testing",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "All of COMP 1502 , COMP 2541 , and COMP 2521 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1502",
+              "display_code": "COMP 1502"
+            },
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3512": {
+      "normalized_code": "COMP3512",
+      "display_code": "COMP 3512",
+      "title": "Web II: Web Application Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2511 , COMP 2503 and COMP 2521 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            },
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2511 , COMP 2503 and COMP 2521 with a minimum grade of C-."
+      ]
+    },
+    "COMP3523": {
+      "normalized_code": "COMP3523",
+      "display_code": "COMP 3523",
+      "title": "Applied Machine Learning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of \u201cC-\u201d in all of COMP 2503 , COMP 2521 and COMP 2541 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            },
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of \u201cC-\u201d in all of COMP 2503 , COMP 2521 and COMP 2541 ."
+      ]
+    },
+    "COMP3532": {
+      "normalized_code": "COMP3532",
+      "display_code": "COMP 3532",
+      "title": "System Administration and Maintenance",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2531 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2531",
+              "display_code": "COMP 2531"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2531 with a minimum grade of C-."
+      ]
+    },
+    "COMP3533": {
+      "normalized_code": "COMP3533",
+      "display_code": "COMP 3533",
+      "title": "Network Infrastructure and Security",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of C- in one of COMP 3532 or COMP 2655 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3532",
+              "display_code": "COMP 3532"
+            },
+            {
+              "normalized_code": "COMP2655",
+              "display_code": "COMP 2655"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of C- in one of COMP 3532 or COMP 2655 ."
+      ]
+    },
+    "COMP3551": {
+      "normalized_code": "COMP3551",
+      "display_code": "COMP 3551",
+      "title": "GUI Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 3504 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3504",
+              "display_code": "COMP 3504"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 3504 with a minimum grade of C-."
+      ]
+    },
+    "COMP3553": {
+      "normalized_code": "COMP3553",
+      "display_code": "COMP 3553",
+      "title": "Human-Computer Interaction",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of C- in both COMP 2511 and COMP 2541 or a minimum grade of C- or COMP 2633 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            },
+            {
+              "normalized_code": "COMP2633",
+              "display_code": "COMP 2633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of C- in both COMP 2511 and COMP 2541 or a minimum grade of C- or COMP 2633 ."
+      ]
+    },
+    "COMP3591": {
+      "normalized_code": "COMP3591",
+      "display_code": "COMP 3591",
+      "title": "Mandatory Work Experience",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COOP 0001, COMP 2511 , COMP 2503 , COMP 2521 , COMP 2531 , and COMP 2541 as well as two of the following: ACCT 2121 , HRES 2170 , MGMT 2130 , and MKTG 2150 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COOP0001",
+              "display_code": "COOP 0001"
+            },
+            {
+              "normalized_code": "COMP2511",
+              "display_code": "COMP 2511"
+            },
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            },
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            },
+            {
+              "normalized_code": "COMP2531",
+              "display_code": "COMP 2531"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            },
+            {
+              "normalized_code": "ACCT2121",
+              "display_code": "ACCT 2121"
+            },
+            {
+              "normalized_code": "HRES2170",
+              "display_code": "HRES 2170"
+            },
+            {
+              "normalized_code": "MGMT2130",
+              "display_code": "MGMT 2130"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MKTG2150",
+              "display_code": "MKTG 2150"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3612": {
+      "normalized_code": "COMP3612",
+      "display_code": "COMP 3612",
+      "title": "Web Development for Computer Science",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2633 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2633",
+              "display_code": "COMP 2633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2633 with a minimum grade of C-."
+      ]
+    },
+    "COMP3614": {
+      "normalized_code": "COMP3614",
+      "display_code": "COMP 3614",
+      "title": "Algorithms and Complexity",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2631 , COMP 2613 and MATH 1200 with minimum grades of \u201cC-\u201c.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            },
+            {
+              "normalized_code": "COMP2613",
+              "display_code": "COMP 2613"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3625": {
+      "normalized_code": "COMP3625",
+      "display_code": "COMP 3625",
+      "title": "Artificial Intelligence",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2631 , MATH 2234 , and one of MATH 1271 or MATH 2071 ; all with a minimum grade of C-.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Nested or compound prerequisite expression."
+      ],
+      "non_course_requirements": [
+        "COMP 2631 , MATH 2234 , and one of MATH 1271 or MATH 2071 ; all with a minimum grade of C-."
+      ]
+    },
+    "COMP3626": {
+      "normalized_code": "COMP3626",
+      "display_code": "COMP 3626",
+      "title": "Evolutionary Computation",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2631 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2631 with a minimum grade of C-."
+      ]
+    },
+    "COMP3649": {
+      "normalized_code": "COMP3649",
+      "display_code": "COMP 3649",
+      "title": "Programming Paradigms",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2613 , COMP 2631 and PHIL 1179 with minimum grades of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2613",
+              "display_code": "COMP 2613"
+            },
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "PHIL1179",
+              "display_code": "PHIL 1179"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP3654": {
+      "normalized_code": "COMP3654",
+      "display_code": "COMP 3654",
+      "title": "Usable Privacy and Security",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of C- in one of COMP 2503 or COMP 2631 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            },
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of C- in one of COMP 2503 or COMP 2631 ."
+      ]
+    },
+    "COMP3659": {
+      "normalized_code": "COMP3659",
+      "display_code": "COMP 3659",
+      "title": "Operating Systems",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of \u201cC-\u201d in both COMP 2631 and COMP 2659 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2659",
+              "display_code": "COMP 2659"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of \u201cC-\u201d in both COMP 2631 and COMP 2659 ."
+      ]
+    },
+    "COMP3700": {
+      "normalized_code": "COMP3700",
+      "display_code": "COMP 3700",
+      "title": "Special Topics in Computing I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Consent of the department.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Consent of the department."
+      ]
+    },
+    "COMP4299": {
+      "normalized_code": "COMP4299",
+      "display_code": "COMP 4299",
+      "title": "Directed Readings",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Consent of the department.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Consent of the department."
+      ]
+    },
+    "COMP4401": {
+      "normalized_code": "COMP4401",
+      "display_code": "COMP 4401",
+      "title": "Quality Assurance and Testing",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 4403.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP4403",
+              "display_code": "COMP 4403"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP4409": {
+      "normalized_code": "COMP4409",
+      "display_code": "COMP 4409",
+      "title": "Advanced Internet Application Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 4421.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP4421",
+              "display_code": "COMP 4421"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP4422": {
+      "normalized_code": "COMP4422",
+      "display_code": "COMP 4422",
+      "title": "Big Data Database Management",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "DATA 2721 and one of either DATA 2402 or COMP 2631 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2721",
+              "display_code": "DATA 2721"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2402",
+              "display_code": "DATA 2402"
+            },
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "DATA 2721 and one of either DATA 2402 or COMP 2631 , each with a minimum grade of C-."
+      ]
+    },
+    "COMP4513": {
+      "normalized_code": "COMP4513",
+      "display_code": "COMP 4513",
+      "title": "Web III: Advanced Web Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 3612 and COMP 2521 , OR COMP 3612 and DATA 2721 , OR COMP 3512 , all with a minimum grade of C-",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3612",
+              "display_code": "COMP 3612"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            },
+            {
+              "normalized_code": "COMP3612",
+              "display_code": "COMP 3612"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2721",
+              "display_code": "DATA 2721"
+            },
+            {
+              "normalized_code": "COMP3512",
+              "display_code": "COMP 3512"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 3612 and COMP 2521 , OR COMP 3612 and DATA 2721 , OR COMP 3512 , all with a minimum grade of C-"
+      ]
+    },
+    "COMP4522": {
+      "normalized_code": "COMP4522",
+      "display_code": "COMP 4522",
+      "title": "Database-II: Advanced Databases",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2503 and COMP 2521 with minimum grades of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2503",
+              "display_code": "COMP 2503"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP4535": {
+      "normalized_code": "COMP4535",
+      "display_code": "COMP 4535",
+      "title": "Computer Security",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 3533 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3533",
+              "display_code": "COMP 3533"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 3533 with a minimum grade of C-."
+      ]
+    },
+    "COMP4543": {
+      "normalized_code": "COMP4543",
+      "display_code": "COMP 4543",
+      "title": "Project Management and Quality Assurance",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2541 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2541 with a minimum grade of C-."
+      ]
+    },
+    "COMP4545": {
+      "normalized_code": "COMP4545",
+      "display_code": "COMP 4545",
+      "title": "Information Systems Organization",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2541 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2541",
+              "display_code": "COMP 2541"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2541 with a minimum grade of C-."
+      ]
+    },
+    "COMP4555": {
+      "normalized_code": "COMP4555",
+      "display_code": "COMP 4555",
+      "title": "Games Development",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 3504 or COMP 3512 or COMP 3551 OR COMP 2633 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3504",
+              "display_code": "COMP 3504"
+            },
+            {
+              "normalized_code": "COMP3512",
+              "display_code": "COMP 3512"
+            },
+            {
+              "normalized_code": "COMP3551",
+              "display_code": "COMP 3551"
+            },
+            {
+              "normalized_code": "COMP2633",
+              "display_code": "COMP 2633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 3504 or COMP 3512 or COMP 3551 OR COMP 2633 with a minimum grade of C-."
+      ]
+    },
+    "COMP4615": {
+      "normalized_code": "COMP4615",
+      "display_code": "COMP 4615",
+      "title": "Algorithms II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 3614 with a minimum grade of C-",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3614",
+              "display_code": "COMP 3614"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 3614 with a minimum grade of C-"
+      ]
+    },
+    "COMP4622": {
+      "normalized_code": "COMP4622",
+      "display_code": "COMP 4622",
+      "title": "Advanced Databases",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Both COMP 2631 and MATH 2234 , and either DATA 2721 or COMP 2521 , all with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2631",
+              "display_code": "COMP 2631"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2721",
+              "display_code": "DATA 2721"
+            },
+            {
+              "normalized_code": "COMP2521",
+              "display_code": "COMP 2521"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "COMP4630": {
+      "normalized_code": "COMP4630",
+      "display_code": "COMP 4630",
+      "title": "Machine Learning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of \u201cC-\u201d in COMP 3625",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3625",
+              "display_code": "COMP 3625"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of \u201cC-\u201d in COMP 3625"
+      ]
+    },
+    "COMP4633": {
+      "normalized_code": "COMP4633",
+      "display_code": "COMP 4633",
+      "title": "Advanced Software Engineering",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "COMP 2633 with a minimum grade of \u201cC-\u201c.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP2633",
+              "display_code": "COMP 2633"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "COMP 2633 with a minimum grade of \u201cC-\u201c."
+      ]
+    },
+    "COMP4635": {
+      "normalized_code": "COMP4635",
+      "display_code": "COMP 4635",
+      "title": "Distributed Systems",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A minimum grade of \u201cC-\u201d in both COMP 3533 and COMP 3659 .",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3533",
+              "display_code": "COMP 3533"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP3659",
+              "display_code": "COMP 3659"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "A minimum grade of \u201cC-\u201d in both COMP 3533 and COMP 3659 ."
+      ]
+    },
+    "COMP4700": {
+      "normalized_code": "COMP4700",
+      "display_code": "COMP 4700",
+      "title": "Special Topics in Computing II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Consent of the department.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Consent of the department."
+      ]
+    },
+    "COMP5590": {
+      "normalized_code": "COMP5590",
+      "display_code": "COMP 5590",
+      "title": "Senior Project",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "COMP5690": {
+      "normalized_code": "COMP5690",
+      "display_code": "COMP 5690",
+      "title": "Senior Computer Science Project",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=COMP&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Permission of the Department Chair",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Permission of the Department Chair"
+      ]
+    },
+    "MATH0110": {
+      "normalized_code": "MATH0110",
+      "display_code": "MATH 0110",
+      "title": "Introduction to Mathematics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH0115": {
+      "normalized_code": "MATH0115",
+      "display_code": "MATH 0115",
+      "title": "Foundations of Mathematics I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH0130": {
+      "normalized_code": "MATH0130",
+      "display_code": "MATH 0130",
+      "title": "Pre-Calculus",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH0131": {
+      "normalized_code": "MATH0131",
+      "display_code": "MATH 0131",
+      "title": "Introduction to Calculus",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH0132": {
+      "normalized_code": "MATH0132",
+      "display_code": "MATH 0132",
+      "title": "Foundations of Mathematics II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1102": {
+      "normalized_code": "MATH1102",
+      "display_code": "MATH 1102",
+      "title": "Introduction to Geometry",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1103": {
+      "normalized_code": "MATH1103",
+      "display_code": "MATH 1103",
+      "title": "Introduction to Statistical Reasoning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1150": {
+      "normalized_code": "MATH1150",
+      "display_code": "MATH 1150",
+      "title": "Mathematical Reasoning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1185": {
+      "normalized_code": "MATH1185",
+      "display_code": "MATH 1185",
+      "title": "Calculus with Applications",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1 with a grade of 60% or higher or equivalent.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite text contains no recognizable course code."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1200": {
+      "normalized_code": "MATH1200",
+      "display_code": "MATH 1200",
+      "title": "Calculus for Scientists I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A grade of 60% or higher in Mathematics 30-1 or in MATH 0130 , or a grade of C- or higher in any of MATH 1283 or MATH 1285 or equivalent.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH0130",
+              "display_code": "MATH 0130"
+            },
+            {
+              "normalized_code": "MATH1283",
+              "display_code": "MATH 1283"
+            },
+            {
+              "normalized_code": "MATH1285",
+              "display_code": "MATH 1285"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1203": {
+      "normalized_code": "MATH1203",
+      "display_code": "MATH 1203",
+      "title": "Linear Algebra for Scientists",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1 with a 60% or higher.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite text contains no recognizable course code."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1205": {
+      "normalized_code": "MATH1205",
+      "display_code": "MATH 1205",
+      "title": "The Beauty of Mathematics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1211": {
+      "normalized_code": "MATH1211",
+      "display_code": "MATH 1211",
+      "title": "Concepts of Mathematical Statistics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Nested or compound prerequisite expression."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1224": {
+      "normalized_code": "MATH1224",
+      "display_code": "MATH 1224",
+      "title": "Introduction to Statistics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 with a grade of C- or higher or Mathematics 30-1/ MATH 0130 with a grade of 65% or higher and Mathematics 31/ MATH 0131 with a grade of 50% or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            },
+            {
+              "normalized_code": "MATH0130",
+              "display_code": "MATH 0130"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH0131",
+              "display_code": "MATH 0131"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1271": {
+      "normalized_code": "MATH1271",
+      "display_code": "MATH 1271",
+      "title": "Discrete Mathematics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH1301": {
+      "normalized_code": "MATH1301",
+      "display_code": "MATH 1301",
+      "title": "Linear and Differential Methods",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH1505": {
+      "normalized_code": "MATH1505",
+      "display_code": "MATH 1505",
+      "title": "Puzzling Adventures in Mathematics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH2071": {
+      "normalized_code": "MATH2071",
+      "display_code": "MATH 2071",
+      "title": "Mathematics for Data Science",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "One of MATH 2233 , MATH 2234 , MATH 2235 , MATH 2333 , MGMT 2262 or ENVS 1105 , and both MATH 1200 and MATH 1203 , each with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2233",
+              "display_code": "MATH 2233"
+            },
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            },
+            {
+              "normalized_code": "MATH2235",
+              "display_code": "MATH 2235"
+            },
+            {
+              "normalized_code": "MATH2333",
+              "display_code": "MATH 2333"
+            },
+            {
+              "normalized_code": "MGMT2262",
+              "display_code": "MGMT 2262"
+            },
+            {
+              "normalized_code": "ENVS1105",
+              "display_code": "ENVS 1105"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2101": {
+      "normalized_code": "MATH2101",
+      "display_code": "MATH 2101",
+      "title": "Abstract Algebra",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2150": {
+      "normalized_code": "MATH2150",
+      "display_code": "MATH 2150",
+      "title": "Higher Arithmetic",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1 or MATH 1150 or the permission of the department.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1150",
+              "display_code": "MATH 1150"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "Mathematics 30-1 or MATH 1150 or the permission of the department."
+      ]
+    },
+    "MATH2200": {
+      "normalized_code": "MATH2200",
+      "display_code": "MATH 2200",
+      "title": "Calculus for Scientists II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2233": {
+      "normalized_code": "MATH2233",
+      "display_code": "MATH 2233",
+      "title": "Statistics for Biological Sciences",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2234": {
+      "normalized_code": "MATH2234",
+      "display_code": "MATH 2234",
+      "title": "Concepts of Mathematical Statistics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2235": {
+      "normalized_code": "MATH2235",
+      "display_code": "MATH 2235",
+      "title": "Statistics with Applications in Geology",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2251": {
+      "normalized_code": "MATH2251",
+      "display_code": "MATH 2251",
+      "title": "Calculus I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1, MATH 0130 or equivalent with a grade of 65% or higher; or MATH 1283 or MATH 1285 with a grade of B- or higher; and MATH 31 or MATH 0131 with a grade of 50% or higher.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Nested or compound prerequisite expression."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2303": {
+      "normalized_code": "MATH2303",
+      "display_code": "MATH 2303",
+      "title": "Linear Algebra for Data Science",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2307": {
+      "normalized_code": "MATH2307",
+      "display_code": "MATH 2307",
+      "title": "Differential Equations I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2200 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2200 with a minimum grade of C-."
+      ]
+    },
+    "MATH2311": {
+      "normalized_code": "MATH2311",
+      "display_code": "MATH 2311",
+      "title": "Linear Algebra II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2319": {
+      "normalized_code": "MATH2319",
+      "display_code": "MATH 2319",
+      "title": "Mathematical Probability and Statistics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2200 with a C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2321": {
+      "normalized_code": "MATH2321",
+      "display_code": "MATH 2321",
+      "title": "Mathematical Probability",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2323": {
+      "normalized_code": "MATH2323",
+      "display_code": "MATH 2323",
+      "title": "Introduction to Mathematical Statistics",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2321 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2321",
+              "display_code": "MATH 2321"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH2333": {
+      "normalized_code": "MATH2333",
+      "display_code": "MATH 2333",
+      "title": "Statistics for Life Sciences",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Mathematics 30-1 or Mathematics 30-2, or department approval.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Mathematics 30-1 or Mathematics 30-2, or department approval."
+      ]
+    },
+    "MATH2444": {
+      "normalized_code": "MATH2444",
+      "display_code": "MATH 2444",
+      "title": "Statistical Data Analysis",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1211 , MATH 1224 , MATH 2233 , MATH 2234 , MATH 2235 , MATH 2333 , ENVS 1105, or MGMT 2262 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1211",
+              "display_code": "MATH 1211"
+            },
+            {
+              "normalized_code": "MATH1224",
+              "display_code": "MATH 1224"
+            },
+            {
+              "normalized_code": "MATH2233",
+              "display_code": "MATH 2233"
+            },
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            },
+            {
+              "normalized_code": "MATH2235",
+              "display_code": "MATH 2235"
+            },
+            {
+              "normalized_code": "MATH2333",
+              "display_code": "MATH 2333"
+            },
+            {
+              "normalized_code": "ENVS1105",
+              "display_code": "ENVS 1105"
+            },
+            {
+              "normalized_code": "MGMT2262",
+              "display_code": "MGMT 2262"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH3101": {
+      "normalized_code": "MATH3101",
+      "display_code": "MATH 3101",
+      "title": "Numerical Analysis",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 and MATH 2200 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 and MATH 2200 , each with a minimum grade of C-."
+      ]
+    },
+    "MATH3200": {
+      "normalized_code": "MATH3200",
+      "display_code": "MATH 3200",
+      "title": "Mathematical Methods",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1202 or MATH 2200 and MATH 1203 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1202",
+              "display_code": "MATH 1202"
+            },
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1202 or MATH 2200 and MATH 1203 , each with a minimum grade of C-."
+      ]
+    },
+    "MATH3201": {
+      "normalized_code": "MATH3201",
+      "display_code": "MATH 3201",
+      "title": "Visual Art and Mathematics: an integrated understanding",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1102 or permission of department.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1102",
+              "display_code": "MATH 1102"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1102 or permission of department."
+      ]
+    },
+    "MATH3202": {
+      "normalized_code": "MATH3202",
+      "display_code": "MATH 3202",
+      "title": "Mathematics Through the Ages",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Consent of the department.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Consent of the department."
+      ]
+    },
+    "MATH3454": {
+      "normalized_code": "MATH3454",
+      "display_code": "MATH 3454",
+      "title": "Regression and Time Series Analysis",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2444 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2444",
+              "display_code": "MATH 2444"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2444 with a minimum grade of C-."
+      ]
+    },
+    "MATH3552": {
+      "normalized_code": "MATH3552",
+      "display_code": "MATH 3552",
+      "title": "Probability",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1200 , MATH 1203 , one of MATH 2233 or MATH 2234 or MATH 2233 , and one of MATH 2071 or MATH 1271 , all with grades of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1200",
+              "display_code": "MATH 1200"
+            },
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            },
+            {
+              "normalized_code": "MATH2233",
+              "display_code": "MATH 2233"
+            },
+            {
+              "normalized_code": "MATH2234",
+              "display_code": "MATH 2234"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2071",
+              "display_code": "MATH 2071"
+            },
+            {
+              "normalized_code": "MATH1271",
+              "display_code": "MATH 1271"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4101": {
+      "normalized_code": "MATH4101",
+      "display_code": "MATH 4101",
+      "title": "Abstract Algebra II",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2101 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2101",
+              "display_code": "MATH 2101"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4102": {
+      "normalized_code": "MATH4102",
+      "display_code": "MATH 4102",
+      "title": "Analysis I",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 3200 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH3200",
+              "display_code": "MATH 3200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4103": {
+      "normalized_code": "MATH4103",
+      "display_code": "MATH 4103",
+      "title": "Complex Analysis",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 3200 with grades of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH3200",
+              "display_code": "MATH 3200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4104": {
+      "normalized_code": "MATH4104",
+      "display_code": "MATH 4104",
+      "title": "Introduction to Partial Differential Equations",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2307 or MATH 3200 with grade of C- or better.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2307",
+              "display_code": "MATH 2307"
+            },
+            {
+              "normalized_code": "MATH3200",
+              "display_code": "MATH 3200"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4111": {
+      "normalized_code": "MATH4111",
+      "display_code": "MATH 4111",
+      "title": "Cryptography",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2101 with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2101",
+              "display_code": "MATH 2101"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "MATH4199": {
+      "normalized_code": "MATH4199",
+      "display_code": "MATH 4199",
+      "title": "Directed Readings",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH4201": {
+      "normalized_code": "MATH4201",
+      "display_code": "MATH 4201",
+      "title": "Seminar",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Consent of the department.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "Consent of the department."
+      ]
+    },
+    "MATH4299": {
+      "normalized_code": "MATH4299",
+      "display_code": "MATH 4299",
+      "title": "Directed Readings",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": null,
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": []
+    },
+    "MATH4303": {
+      "normalized_code": "MATH4303",
+      "display_code": "MATH 4303",
+      "title": "Fourier Analysis for Data Science",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=MATH&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2200 and MATH 2303 , each with a grade of C- or higher.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2200",
+              "display_code": "MATH 2200"
+            }
+          ]
+        },
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2303",
+              "display_code": "MATH 2303"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "DATA2402": {
+      "normalized_code": "DATA2402",
+      "display_code": "DATA 2402",
+      "title": "Programming for Data Scientists",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 1203 and COMP 1701 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH1203",
+              "display_code": "MATH 1203"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1701",
+              "display_code": "COMP 1701"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 1203 and COMP 1701 , each with a minimum grade of C-."
+      ]
+    },
+    "DATA2721": {
+      "normalized_code": "DATA2721",
+      "display_code": "DATA 2721",
+      "title": "Data Science I: Introduction to Databases",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "A grade of C- or higher in either COMP 1701 or COMP 2001 .",
+      "prerequisite_groups": [
+        {
+          "operator": "one_of",
+          "courses": [
+            {
+              "normalized_code": "COMP1701",
+              "display_code": "COMP 1701"
+            },
+            {
+              "normalized_code": "COMP2001",
+              "display_code": "COMP 2001"
+            }
+          ]
+        }
+      ],
+      "parse_status": "review_required",
+      "issues": [
+        "Prerequisite includes unmodeled conditions."
+      ],
+      "non_course_requirements": []
+    },
+    "DATA3453": {
+      "normalized_code": "DATA3453",
+      "display_code": "DATA 3453",
+      "title": "Data Visualization",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "DATA 2402 with minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2402",
+              "display_code": "DATA 2402"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "DATA 2402 with minimum grade of C-."
+      ]
+    },
+    "DATA3463": {
+      "normalized_code": "DATA3463",
+      "display_code": "DATA 3463",
+      "title": "Foundations of Data Acquisition",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "DATA 2721 and DATA 2402 each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2721",
+              "display_code": "DATA 2721"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2402",
+              "display_code": "DATA 2402"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "DATA 2721 and DATA 2402 each with a minimum grade of C-."
+      ]
+    },
+    "DATA3464": {
+      "normalized_code": "DATA3464",
+      "display_code": "DATA 3464",
+      "title": "Foundations of Data Processing",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "DATA 2402 and MATH 2444 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA2402",
+              "display_code": "DATA 2402"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2444",
+              "display_code": "MATH 2444"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "DATA 2402 and MATH 2444 , each with a minimum grade of C-."
+      ]
+    },
+    "DATA3491": {
+      "normalized_code": "DATA3491",
+      "display_code": "DATA 3491",
+      "title": "Work Integrated Learning in Data Science",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "Completion of COOP 0001 and DATA 3463 with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "COOP0001",
+              "display_code": "COOP 0001"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA3463",
+              "display_code": "DATA 3463"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "Completion of COOP 0001 and DATA 3463 with a minimum grade of C-."
+      ]
+    },
+    "DATA4465": {
+      "normalized_code": "DATA4465",
+      "display_code": "DATA 4465",
+      "title": "Machine Learning",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2303 , MATH 3552 , DATA 3453 and DATA 3463 , each with a minimum grade of C-.",
+      "prerequisite_groups": [
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "MATH2303",
+              "display_code": "MATH 2303"
+            },
+            {
+              "normalized_code": "MATH3552",
+              "display_code": "MATH 3552"
+            },
+            {
+              "normalized_code": "DATA3453",
+              "display_code": "DATA 3453"
+            }
+          ]
+        },
+        {
+          "operator": "all_of",
+          "courses": [
+            {
+              "normalized_code": "DATA3463",
+              "display_code": "DATA 3463"
+            }
+          ]
+        }
+      ],
+      "parse_status": "parsed",
+      "issues": [],
+      "non_course_requirements": [
+        "MATH 2303 , MATH 3552 , DATA 3453 and DATA 3463 , each with a minimum grade of C-."
+      ]
+    },
+    "DATA4734": {
+      "normalized_code": "DATA4734",
+      "display_code": "DATA 4734",
+      "title": "Network Science: Techniques and Applications",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "MATH 2234 ; and one of MATH 1271 or MATH 2071 , and one of COMP 2631 or DATA 2402 , all with a minimum grade of C-.",
+      "prerequisite_groups": [],
+      "parse_status": "review_required",
+      "issues": [
+        "Nested or compound prerequisite expression."
+      ],
+      "non_course_requirements": [
+        "MATH 2234 ; and one of MATH 1271 or MATH 2071 , and one of COMP 2631 or DATA 2402 , all with a minimum grade of C-."
+      ]
+    },
+    "DATA5496": {
+      "normalized_code": "DATA5496",
+      "display_code": "DATA 5496",
+      "title": "Data Science Capstone",
+      "catalog_url": "https://catalog.mtroyal.ca/content.php?filter%5B27%5D=DATA&filter%5Bcourse_type%5D=-1&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&search_database=Filter&filter%5Bexact_match%5D=1",
+      "catalog_status": "returned_by_catalog",
+      "source_prerequisite_text": "DATA 3453 and DATA 3464 both with a minimum grade of C- and department approval.",
+      "prerequisite_groups": [],
+      "parse_status": "not_applicable",
+      "issues": [],
+      "non_course_requirements": [
+        "DATA 3453 and DATA 3464 both with a minimum grade of C- and department approval."
+      ]
+    }
+  }
+}

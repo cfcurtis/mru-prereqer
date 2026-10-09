@@ -258,7 +258,7 @@ def main() -> int:
         help="Department codes to import (default: COMP MATH DATA).",
     )
     parser.add_argument("--catalog-id", default="38", help="Catalog edition ID (default: 38).")
-    parser.add_argument("--output-dir", default="var/generated", help="Output directory.")
+    parser.add_argument("--output-dir", default="data", help="Output directory.")
     parser.add_argument(
         "--html-dir",
         default="var/catalog-html",
