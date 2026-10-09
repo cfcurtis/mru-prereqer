@@ -1,6 +1,13 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
-from import_catalog import extract_courses, normalize_code, parse_prerequisites
+from import_catalog import (
+    extract_courses,
+    load_department_html,
+    normalize_code,
+    parse_prerequisites,
+)
 
 
 class CourseCodeTests(unittest.TestCase):
@@ -46,16 +53,25 @@ class PrerequisiteParserTests(unittest.TestCase):
 
 
 class CatalogExtractionTests(unittest.TestCase):
+    def test_loads_manually_downloaded_department_html(self):
+        with TemporaryDirectory() as directory:
+            source = Path(directory) / "COMP.html"
+            source.write_text("<html>catalog</html>", encoding="utf-8")
+
+            self.assertEqual(
+                load_department_html(Path(directory), "COMP", "38"),
+                "<html>catalog</html>",
+            )
+
     def test_extracts_course_and_individual_catalog_link(self):
         html = """
-        <div class="courseblock">
-          <h3 class="courseblocktitle">
-            <a href="preview_course_nopop.php?catoid=38&amp;coid=123">
-              COMP 2511 Data Structures
-            </a>
-          </h3>
-          <p>Prerequisite: one of COMP 1631 or COMP 1701</p>
-        </div>
+        <ul><li>
+          <h3>COMP 2511 - Data Structures</h3>
+          <em>Prerequisite(s):</em>
+          One of <a href="preview_course_nopop.php?catoid=38&amp;coid=123">
+          COMP 1631</a> or COMP 1701 with a minimum grade of C-.
+          <br>
+        </li></ul>
         """
 
         courses, issues = extract_courses(
@@ -67,8 +83,10 @@ class CatalogExtractionTests(unittest.TestCase):
         self.assertEqual(courses[0].title, "Data Structures")
         self.assertEqual(
             courses[0].catalog_url,
-            "https://catalog.mtroyal.ca/preview_course_nopop.php?catoid=38&coid=123",
+            "https://catalog.mtroyal.ca/content.php",
         )
+        self.assertEqual(courses[0].parse_status, "parsed")
+        self.assertEqual(len(courses[0].non_course_requirements), 1)
 
 
 if __name__ == "__main__":
