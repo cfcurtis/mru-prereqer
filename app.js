@@ -181,13 +181,65 @@ function deduplicateTree(root) {
     }
   }
 
-  for (const column of d3.groups(
-    nodes.filter((node) => node.depth > 0),
-    (node) => node.depth,
-  ).values()) {
-    column.sort((left, right) => left.diagramY - right.diagramY);
-    column.forEach((node, index) => {
-      node.diagramY = (index - (column.length - 1) / 2) * 50;
+  const columns = new Map();
+  for (const node of nodes) {
+    if (node.depth > 0) {
+      const column = columns.get(node.depth) ?? [];
+      column.push(node);
+      columns.set(node.depth, column);
+    }
+  }
+
+  for (const column of columns.values()) {
+    const nodeIds = new Set(column.map((node) => node.id));
+    const choiceBlocks = d3.groups(
+      [...linksByKey.values()].filter(
+        (link) => link.choiceGroup && nodeIds.has(link.target.id),
+      ),
+      (link) => link.choiceGroup,
+    );
+    const claimedNodes = new Set();
+    const blocks = [];
+
+    for (const [, links] of choiceBlocks) {
+      const groupNodes = [...new Set(links.map((link) => link.target))].filter(
+        (node) => node.depth === column[0].depth,
+      );
+      if (groupNodes.length < 2 || groupNodes.some((node) => claimedNodes.has(node))) {
+        continue;
+      }
+      groupNodes.sort((left, right) => left.diagramY - right.diagramY);
+      groupNodes.forEach((node) => claimedNodes.add(node));
+      blocks.push({
+        nodes: groupNodes,
+        order: groupNodes[0].diagramY,
+        isChoiceBlock: true,
+      });
+    }
+
+    for (const node of column) {
+      if (!claimedNodes.has(node)) {
+        blocks.push({ nodes: [node], order: node.diagramY, isChoiceBlock: false });
+      }
+    }
+
+    const orderedBlocks = blocks.sort((left, right) => left.order - right.order);
+    const orderedNodes = [];
+    let nextY = 0;
+    for (const [index, block] of orderedBlocks.entries()) {
+      for (const node of block.nodes) {
+        node.diagramY = nextY;
+        orderedNodes.push(node);
+        nextY += 50;
+      }
+      const nextBlock = orderedBlocks[index + 1];
+      if (nextBlock && (block.isChoiceBlock || nextBlock.isChoiceBlock)) {
+        nextY += 40;
+      }
+    }
+    const center = (orderedNodes[0].diagramY + orderedNodes.at(-1).diagramY) / 2;
+    orderedNodes.forEach((node) => {
+      node.diagramY -= center;
     });
   }
 
