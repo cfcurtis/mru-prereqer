@@ -258,17 +258,14 @@ function relationshipPath(link) {
     (source.diagramX > 0 && target.diagramX < 0)
   ) {
     const direction = Math.sign(target.diagramX - source.diagramX);
-    const routeY = source.diagramY + target.diagramY <= 0 ? -52 : 52;
-    const routeStartX = -direction * 100;
-    const routeEndX = direction * 100;
+    const routeDirection = source.diagramY + target.diagramY <= 0 ? -1 : 1;
+    const routeY = routeDirection * (52 + link.curveOffset * 20);
+    const controlY =
+      (routeY - (source.diagramY + target.diagramY) / 8) / 0.75;
     return [
       `M${source.diagramX + direction * sourceOffset},${source.diagramY}`,
-      `C${source.diagramX + direction * sourceOffset + direction * 64},${source.diagramY}`,
-      `${routeStartX - direction * 20},${routeY}`,
-      `${routeStartX},${routeY}`,
-      `L${routeEndX},${routeY}`,
-      `C${routeEndX + direction * 20},${routeY}`,
-      `${target.diagramX - direction * targetOffset - direction * 64},${target.diagramY}`,
+      `C${-direction * 100},${controlY}`,
+      `${direction * 100},${controlY}`,
       `${target.diagramX - direction * targetOffset},${target.diagramY}`,
     ].join(" ");
   }
@@ -323,7 +320,20 @@ function crossTreeLinks(left, right) {
     }
   }
 
-  return [...linksByKey.values()];
+  const curveOffsets = new Map();
+  return [...linksByKey.values()]
+    .sort(
+      (leftLink, rightLink) =>
+        leftLink.source.diagramY - rightLink.source.diagramY ||
+        leftLink.target.diagramY - rightLink.target.diagramY,
+    )
+    .map((link) => {
+      const routeDirection =
+        link.source.diagramY + link.target.diagramY <= 0 ? -1 : 1;
+      const curveOffset = curveOffsets.get(routeDirection) ?? 0;
+      curveOffsets.set(routeDirection, curveOffset + 1);
+      return { ...link, curveOffset };
+    });
 }
 
 function drawCrossTreeLinks(layer, links) {
