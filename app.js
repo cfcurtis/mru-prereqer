@@ -413,12 +413,17 @@ function updateSummary(course) {
   catalogLink.hidden = false;
 }
 
-function selectCourse(code) {
+function selectCourse(code, { updateHistory = true } = {}) {
   state.selectedCode = code;
   courseInput.value = state.courses[code].display_code;
   searchMessage.textContent = "";
   updateSummary(state.courses[code]);
   renderDiagram();
+  if (updateHistory) {
+    const url = new URL(window.location);
+    url.searchParams.set("course", code);
+    window.history.pushState({ course: code }, "", url);
+  }
 }
 
 searchForm.addEventListener("submit", (event) => {
@@ -429,6 +434,15 @@ searchForm.addEventListener("submit", (event) => {
     return;
   }
   selectCourse(code);
+});
+
+window.addEventListener("popstate", (event) => {
+  const code = normalizeCode(
+    event.state?.course ?? new URLSearchParams(window.location.search).get("course") ?? "",
+  );
+  if (state.courses[code]) {
+    selectCourse(code, { updateHistory: false });
+  }
 });
 
 async function loadCourses() {
@@ -449,7 +463,18 @@ async function loadCourses() {
         courseCodes.append(option);
       });
     buildReverseIndex();
-    selectCourse(state.courses.MATH2234 ? "MATH2234" : Object.keys(state.courses)[0]);
+      const requestedCode = normalizeCode(
+        new URLSearchParams(window.location.search).get("course") ?? "",
+      );
+      const initialCode = state.courses[requestedCode]
+        ? requestedCode
+        : state.courses.MATH2234
+          ? "MATH2234"
+          : Object.keys(state.courses)[0];
+      selectCourse(initialCode, { updateHistory: false });
+      const url = new URL(window.location);
+      url.searchParams.set("course", initialCode);
+      window.history.replaceState({ course: initialCode }, "", url);
   } catch (error) {
     selectedCourse.textContent = "Course data unavailable";
     searchMessage.textContent = error.message;
