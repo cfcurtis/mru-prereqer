@@ -7,14 +7,11 @@ import argparse
 import json
 import re
 import sys
-import time
 from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Iterable
-from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, urljoin
-from urllib.request import Request, urlopen
+from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
 
@@ -53,6 +50,10 @@ class Course:
     non_course_requirements: list[str] = field(default_factory=list)
 
 
+def normalize_space(value: str) -> str:
+    return " ".join(value.replace("\xa0", " ").split())
+
+
 def normalize_code(value: str) -> tuple[str, str] | None:
     match = COURSE_CODE_RE.search(value)
     if not match:
@@ -77,32 +78,20 @@ def build_catalog_url(department: str, catalog_id: str) -> str:
     return f"{CATALOG_BASE_URL}?{query}"
 
 
-def fetch_page(url: str, cache_path: Path, refresh: bool) -> str:
-    if cache_path.exists() and not refresh:
-        return cache_path.read_text(encoding="utf-8")
-
-    request = Request(
-        url,
-        headers={"User-Agent": "mru-course-visualizer/0.1 (manual catalog import)"},
+def load_department_html(html_dir: Path, department: str, catalog_id: str) -> str:
+    """Load a manually downloaded department page from the local filesystem."""
+    candidates = (
+        html_dir / f"{department}.html",
+        html_dir / f"{catalog_id}-{department}.html",
     )
-    try:
-        with urlopen(request, timeout=30) as response:
-            page = response.read().decode(response.headers.get_content_charset() or "utf-8")
-    except HTTPError as error:
-        if error.code == 202:
-            raise RuntimeError(
-                "The catalog returned a WAF challenge (HTTP 202). "
-                "Try again later or supply a cached response."
-            ) from error
-        raise RuntimeError(f"Catalog request failed with HTTP {error.code}.") from error
-    except URLError as error:
-        raise RuntimeError(f"Catalog request failed: {error.reason}") from error
+    source_path = next((path for path in candidates if path.is_file()), None)
+    if source_path is None:
+        expected = " or ".join(path.name for path in candidates)
+        raise RuntimeError(f"Missing downloaded catalog HTML: {expected}")
 
+    page = source_path.read_text(encoding="utf-8")
     if not page.strip():
-        raise RuntimeError("Catalog returned an empty response.")
-
-    cache_path.parent.mkdir(parents=True, exist_ok=True)
-    cache_path.write_text(page, encoding="utf-8")
+        raise RuntimeError(f"Downloaded catalog HTML is empty: {source_path.name}")
     return page
 
 
@@ -122,7 +111,7 @@ def course_references(text: str) -> list[dict[str, str]]:
 
 def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[str], list[str]]:
     """Parse simple AND/OR course requirements; preserve anything ambiguous."""
-    clean = " ".join(text.split())
+    clean = normalize_space(text)
     notes = [clean] if NON_COURSE_RE.search(clean) else []
     course_parts = REQUIREMENT_LABEL_RE.sub("", clean).strip(" .")
     if not course_parts:
@@ -136,6 +125,8 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     for part in and_parts:
         references = course_references(part)
         if not references:
+            if notes:
+                return [], "not_applicable", [], notes
             return [], "review_required", ["Prerequisite text contains no recognizable course code."], notes
         operator = (
             "one_of"
@@ -144,6 +135,9 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
         )
         groups.append({"operator": operator, "courses": references})
 
+    if notes:
+        return groups, "parsed", [], notes
+
     unparsed_words = COURSE_CODE_RE.sub("", course_parts)
     unparsed_words = re.sub(r"\b(?:and|or|one|of|either|the|following|course|courses)\b", "", unparsed_words, flags=re.I)
     if re.sub(r"[\s,./-]", "", unparsed_words):
@@ -151,39 +145,37 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     return groups, "parsed", [], notes
 
 
-def text_after_label(node: object) -> str | None:
-    text = node.get_text(" ", strip=True)  # type: ignore[attr-defined]
-    match = REQUIREMENT_LABEL_RE.search(text)
-    return text[match.start() :] if match else None
-
-
 def extract_courses(html: str, department: str, source_url: str) -> tuple[list[Course], list[Issue]]:
     soup = BeautifulSoup(html, "html.parser")
     courses: list[Course] = []
     issues: list[Issue] = []
-    headings = soup.select("h2, h3, h4, .courseblocktitle")
 
-    for heading in headings:
-        heading_text = heading.get_text(" ", strip=True)
+    for block in soup.find_all("li"):
+        heading = block.find("h3")
+        if heading is None:
+            continue
+        heading_text = normalize_space(heading.get_text(" ", strip=True))
         code = normalize_code(heading_text)
         if not code or code[1].split()[0] != department.upper():
             continue
         normalized_code, display_code = code
         title = re.sub(rf"^{re.escape(display_code)}\s*", "", heading_text, flags=re.I)
-        block = heading.find_parent(class_=re.compile("courseblock", re.I)) or heading.parent
-        link = heading.find("a", href=True)
-        catalog_url = urljoin(source_url, link["href"]) if link else source_url
+        prerequisite_match = re.search(
+            r"Prerequisite\(s\):</em>\s*(?P<fragment>.*?)(?:<br\s*/?>|$)",
+            str(block),
+            re.IGNORECASE | re.DOTALL,
+        )
         requirement_text = None
-        for node in block.select("p, div, li") if block else []:
-            requirement_text = text_after_label(node)
-            if requirement_text:
-                break
+        if prerequisite_match:
+            requirement_text = normalize_space(BeautifulSoup(
+                prerequisite_match.group("fragment"), "html.parser"
+            ).get_text(" ", strip=True))
         groups, status, parse_issues, notes = parse_prerequisites(requirement_text or "")
         course = Course(
             normalized_code=normalized_code,
             display_code=display_code,
             title=title.strip(" -:"),
-            catalog_url=catalog_url,
+            catalog_url=source_url,
             catalog_status="returned_by_catalog",
             source_prerequisite_text=requirement_text,
             prerequisite_groups=groups,
@@ -208,21 +200,16 @@ def unique_departments(values: Iterable[str]) -> list[str]:
 
 def run_import(arguments: argparse.Namespace) -> int:
     output_dir = Path(arguments.output_dir)
-    cache_dir = Path(arguments.cache_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     all_courses: list[Course] = []
     issues: list[Issue] = []
     successful_departments: list[str] = []
 
-    for index, department in enumerate(unique_departments(arguments.departments)):
-        if index:
-            time.sleep(arguments.delay)
+    for department in unique_departments(arguments.departments):
         source_url = build_catalog_url(department, arguments.catalog_id)
         try:
-            html = fetch_page(
-                source_url,
-                cache_dir / f"{arguments.catalog_id}-{department}.html",
-                arguments.refresh,
+            html = load_department_html(
+                Path(arguments.html_dir), department, arguments.catalog_id
             )
             courses, department_issues = extract_courses(html, department, source_url)
         except RuntimeError as error:
@@ -267,9 +254,11 @@ def main() -> int:
     )
     parser.add_argument("--catalog-id", default="38", help="Catalog edition ID (default: 38).")
     parser.add_argument("--output-dir", default="var/generated", help="Output directory.")
-    parser.add_argument("--cache-dir", default="var/cache", help="Response cache directory.")
-    parser.add_argument("--refresh", action="store_true", help="Ignore cached catalog responses.")
-    parser.add_argument("--delay", type=float, default=1, help="Seconds between requests.")
+    parser.add_argument(
+        "--html-dir",
+        default="var/catalog-html",
+        help="Directory containing downloaded DEPT.html or CATALOG_ID-DEPT.html files.",
+    )
     return run_import(parser.parse_args())
 
 
