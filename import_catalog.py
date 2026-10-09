@@ -118,7 +118,8 @@ def parse_prerequisites(text: str) -> tuple[list[dict[str, object]], str, list[s
     if not course_parts:
         return [], "not_applicable", [], notes
 
-    if "(" in course_parts or ")" in course_parts or ";" in course_parts:
+    course_parts = course_parts.split(";", maxsplit=1)[0].strip()
+    if "(" in course_parts or ")" in course_parts:
         return [], "review_required", ["Nested or compound prerequisite expression."], notes
 
     and_parts = re.split(r"\s+(?:and|&)\s+", course_parts, flags=re.I)

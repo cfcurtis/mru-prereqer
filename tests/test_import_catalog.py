@@ -51,6 +51,21 @@ class PrerequisiteParserTests(unittest.TestCase):
             ["COMP1631", "COMP1701"],
         )
 
+    def test_parses_required_and_optional_courses_before_grade_note(self):
+        groups, status, issues, notes = parse_prerequisites(
+            "COMP 2631, MATH 2234, and one of MATH 1271 or MATH 2071; "
+            "all with a minimum grade of C-."
+        )
+
+        self.assertEqual(status, "parsed")
+        self.assertEqual(issues, [])
+        self.assertEqual(
+            [[course["normalized_code"] for course in group["courses"]] for group in groups],
+            [["COMP2631", "MATH2234"], ["MATH1271", "MATH2071"]],
+        )
+        self.assertEqual([group["operator"] for group in groups], ["all_of", "one_of"])
+        self.assertEqual(len(notes), 1)
+
 
 class CatalogExtractionTests(unittest.TestCase):
     def test_loads_manually_downloaded_department_html(self):
