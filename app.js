@@ -253,6 +253,25 @@ function relationshipPath(link) {
   const { source, target } = link;
   const sourceOffset = source.id === state.selectedCode ? 84 : 76;
   const targetOffset = target.id === state.selectedCode ? 84 : 76;
+  if (
+    (source.diagramX < 0 && target.diagramX > 0) ||
+    (source.diagramX > 0 && target.diagramX < 0)
+  ) {
+    const direction = Math.sign(target.diagramX - source.diagramX);
+    const routeY = source.diagramY + target.diagramY <= 0 ? -52 : 52;
+    const routeStartX = -direction * 100;
+    const routeEndX = direction * 100;
+    return [
+      `M${source.diagramX + direction * sourceOffset},${source.diagramY}`,
+      `C${source.diagramX + direction * sourceOffset + direction * 64},${source.diagramY}`,
+      `${routeStartX - direction * 20},${routeY}`,
+      `${routeStartX},${routeY}`,
+      `L${routeEndX},${routeY}`,
+      `C${routeEndX + direction * 20},${routeY}`,
+      `${target.diagramX - direction * targetOffset - direction * 64},${target.diagramY}`,
+      `${target.diagramX - direction * targetOffset},${target.diagramY}`,
+    ].join(" ");
+  }
   if (source.diagramX !== target.diagramX) {
     const direction = Math.sign(target.diagramX - source.diagramX);
     return d3
@@ -273,6 +292,50 @@ function relationshipPath(link) {
     `${laneX},${target.diagramY}`,
     `${target.diagramX + side * targetOffset},${target.diagramY}`,
   ].join(" ");
+}
+
+function crossTreeLinks(left, right) {
+  const leftNodes = new Map(
+    left.nodes
+      .filter((node) => node.depth > 0)
+      .map((node) => [node.id, node]),
+  );
+  const rightNodes = new Map(
+    right.nodes
+      .filter((node) => node.depth > 0)
+      .map((node) => [node.id, node]),
+  );
+  const linksByKey = new Map();
+
+  for (const source of leftNodes.values()) {
+    for (const dependent of state.reverseIndex.get(source.id) ?? []) {
+      const target = rightNodes.get(dependent.code);
+      if (!target) {
+        continue;
+      }
+      const key = `${source.id}-${target.id}`;
+      const existing = linksByKey.get(key);
+      if (existing) {
+        existing.optional &&= dependent.optional;
+      } else {
+        linksByKey.set(key, { source, target, optional: dependent.optional });
+      }
+    }
+  }
+
+  return [...linksByKey.values()];
+}
+
+function drawCrossTreeLinks(layer, links) {
+  layer
+    .selectAll("path")
+    .data(links)
+    .join("path")
+    .attr("class", (link) => `link cross-tree${link.optional ? " optional" : ""}`)
+    .attr("d", relationshipPath)
+    .attr("marker-end", (link) =>
+      `url(#arrow-${link.optional ? "optional" : "required"})`,
+    );
 }
 
 function drawTree(layer, graph, direction) {
@@ -396,7 +459,7 @@ function renderDiagram() {
   });
   const canvas = svg.append("g");
   svg.call(d3.zoom().scaleExtent([0.35, 8]).on("zoom", (event) => canvas.attr("transform", event.transform)));
-
+  drawCrossTreeLinks(canvas.append("g"), crossTreeLinks(left, right));
   drawTree(canvas.append("g"), left, -1);
   drawTree(canvas.append("g"), right, 1);
 
