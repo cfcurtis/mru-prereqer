@@ -77,7 +77,7 @@ function prerequisiteTree(code, path = new Set(), optional = false) {
     } else {
       children.push(
         ...group.courses.map((item) =>
-          prerequisiteTree(item.normalized_code, nextPath),
+          prerequisiteTree(item.normalized_code, nextPath, optional),
         ),
       );
     }
@@ -130,6 +130,15 @@ function layoutTree(tree, direction) {
   return root;
 }
 
+function hasIndependentRequiredLink(node, links) {
+  return links.some(
+    (link) =>
+      link.target === node &&
+      !link.optional &&
+      !link.source.optional,
+  );
+}
+
 function deduplicateTree(root) {
   const occurrences = root.descendants();
   const canonicalById = new Map();
@@ -151,9 +160,7 @@ function deduplicateTree(root) {
     id: occurrence.data.id,
     label: occurrence.data.label,
     kind: occurrence.data.kind,
-    optional: occurrences
-      .filter((item) => item.data.id === occurrence.data.id)
-      .every((item) => item.data.optional),
+    optional: occurrence.data.optional,
     depth: occurrence.depth,
     diagramX: occurrence.diagramX,
     diagramY: occurrence.diagramY,
@@ -207,7 +214,11 @@ function deduplicateTree(root) {
       );
       if (
         groupNodes.length < 2 ||
-        groupNodes.some((node) => claimedNodes.has(node) || !node.optional)
+        groupNodes.some(
+          (node) =>
+            claimedNodes.has(node) ||
+            hasIndependentRequiredLink(node, linksByKey.values()),
+        )
       ) {
         continue;
       }
@@ -358,7 +369,7 @@ function drawTree(layer, graph, direction) {
     const nodes = [...new Set(links.map((link) => link.target))];
     if (
       nodes.length < 2 ||
-      nodes.some((node) => !node.optional) ||
+      nodes.some((node) => hasIndependentRequiredLink(node, graph.links)) ||
       new Set(nodes.map((node) => node.depth)).size > 1
     ) {
       continue;
